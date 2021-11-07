@@ -5,3 +5,50 @@
     margin-right: 25%; */
     margin: auto;
 }
+
+body {
+    text-align: center;
+}
+
+.leftpane {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  border: 3px solid black;
+  padding: 300px;
+}
+
+.midpane {
+  width: 33.33%;
+  float: left;
+}
+
+.rightpane {
+  width: 33.33%;
+  float: right;
+  border: 3px solid black;
+  border-radius: 3px;
+  padding: 300px;
+}
+
+#memo {
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 200px;
+    margin-bottom: 10px;
+}
+
+#dietCheck {
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 150px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#addWorkout {
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 75px;
+    margin-top: 10px;
+}
