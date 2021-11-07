@@ -2,67 +2,88 @@
 
 ## A Brief Overview
 
--   To keep track of a user's workout routine, and to provide information about the number of users at the gym.
+-   SKKU에서는 코로나19 확진자가 발생하면 학생들에게 메세지를 발송하고 '[코로나-19 종합안내 홈페이지 | 교내확진자 현황 게시판](https://skb.skku.edu/haksaeng/status.do)'에 관련 정보를 업데이트 한다. 하지만 텍스트로만 공지되는 특성상 교내 확진자 동선을 단번에 파악하기 어렵다. 따라서 이를 **시각적으로 표현**하려 한다.
 
 ## Example
 
--   Image input required
+<img width="810" alt="2021-05-25" src="https://user-images.githubusercontent.com/80454079/119442329-976ed580-bd62-11eb-8547-8ad804998e85.png">
+
+![Final_Project](https://user-images.githubusercontent.com/80454079/119444378-19acc900-bd66-11eb-8b32-75a294048f46.gif)
+
+## Installation
+
+-   [GitHub Repo](https://github.com/JiyunIm00/ossp_final_project)(**Just click!**)
+-   npm install navigator
+-   npm install node-html-parser
+
+## How to use
+
+1. [SKKU Corona Map](https://jiyunim00.github.io/ossp_final_project/) 클릭
+2. 하단의 **textfield에 번호를 입력**
+3. **Search button을 클릭**하면 지도와 하단에 동선이 표시된다.
 
 ## 1. Releases
 
--   v.1.0.0 - Needs to be released someday...
+-   v.1.0.0 - 확진자 번호 입력시 하단과 지도에 동선 표시.
+-   v.1.1.0 - 여러 확진자 입력시 지도 update 기능 추가.
 
 ## 2. History
 
-1. Implement an overall HTML Format of all pages
+1. HTML 문서 상에 지도와 텍스트창을 만든다.(구현완료)
 
-2. Implement calendar for each month
+2. main.js와 lib.js에 자동으로 crawling해서 다음과 같은 정보를 얻는다.(구현완료)
 
 ```js
-var each_trial = {          // Information of each trial. All workouts cannot be done uniformly
-    workout_Name: "",       // Name of the workout. e.g. Pushup, Bench Press...
-    workout_Quantity: 0,    // Number of conducts for this set.
-    set_Num: 0,             // nth set for this workout
+var person = {
+    confirmed_Num: 0, // 확진번호
+    url: "", // 확진자의 동선이 담긴 url
+    totalNum_In_OnePage: 0, // 한 페이지에 적힌 총 확진자 수
+    Num_In_Page: 0, // 한 페이지에 적힌 확진자 중 #번째
+    campus: "", // 소속 캠퍼스
+    datas: [], // 확진자의 주요 정보가 담긴 전체 paragraph
+    splitedData: "", // 위 datas에서 #번만 추출한 data
+    path: [], // splitedData에서 장소만을 순서대로 추출한 data
 };
-
-var each_workout = {        // Contains the whole information of each trial for that workout that was conducted for that day
-    // each_trial structures
-    prog_Overload: false    // Contains information of whether that workout was successfully conducted for that day.
-    workout_Part: ""        // Which part of the body is that workout for e.g. Biceps, Triceps ...
-}
-
-var each_day = {            // Contains information of all the workouts that was done for that day
-    // Each workout structures
-    // Date of that day e.g. 11/07/2021
-}
 ```
 
-3. Look for a way to save the number of visitors to the gym in a server
+3. Event handler를 통해 2에서 추출한 정보로 지도상에 방문장소를 순서대로 잇는다.(구현완료)
 
+-   html에서 require함수를 사용할 수 없음. import로 바꾸더라도 CORS ERROR가 발생함.(해결 X)
+
+> #### Cur: 2에서 추출된 data를 수작업으로 local상에 array로 만들어서 구현했다.
 
 ## 3. Future
 
--   I don't know..
+-   현재는 v.1.#.#에서는 CORS문제를 해결하지 못해 html문서상에 lib.js와 main.js를 불러오지 못하고 있습니다. 이후 해결방법을 알게되면 수정할 예정입니다. 혹시 해결 방법을 아시는 분은 알려주시길 바랍니다.
 
 ## 4. Code of Conduct
 
 -   main branch는 가능하면 건들지 않는다.
 -   미완성 기능의 경우 새로운 branch를 만들고 작업한다.
 -   작업이 완료되면 Merge한다.
--   이건 저희도 같이 하죠.
+
+## 5. API reference
+
+-   [네이버 지도 API](https://navermaps.github.io/maps.js/docs/tutorial-2-Getting-Started.html) 사용
+    > 1. [마커](https://navermaps.github.io/maps.js/docs/naver.maps.Marker.html)
+    > 2. [경로선(polyline 사용)](https://navermaps.github.io/maps.js/docs/naver.maps.Polyline.html)
 
 ## 6. Work
 
--   곽준영:
+-   신영환:
 
-> 1. 비주얼
+> 1. 성균관대 확진자 사이트 크롤링
+> 2. 자료 정리와 가공
 
--   진영서:
+-   오민재:
 
-> 1. 
+> 1. 사이트 html 디자인 밎 아웃라인 작성
+> 2. 크롤링 데이터 처리(사람 묶음 수, 묶음 내 순서)
+> 3. 입력창 event handler (동선 글 표시)
 
--   이유기:
+-   임지윤:
 
-> 1.  
+> 1.  네이버 지도 api 확진자 경로 표시(event handler)
+> 2.  크롤링된 데이터 가공(다녀간 장소 정리)
 
-## 7. [License] ??
+## 7. [License](https://github.com/JiyunIm00/ossp_final_project/blob/main/LICENSE)(Click it!)
