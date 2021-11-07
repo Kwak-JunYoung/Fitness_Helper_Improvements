@@ -1,4 +1,4 @@
-# Project - SKKU Corona Map
+# Project - Fitness_Helper
 
 ## A Brief Overview
 
