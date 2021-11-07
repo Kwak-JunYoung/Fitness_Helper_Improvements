@@ -51,7 +51,7 @@ var each_Day = {
 -   작업이 완료되면 Merge한다.
 -   저희도 이렇게 하죠
 
-## 6. Work
+## 5. Work
 
 -   곽준영:
 
