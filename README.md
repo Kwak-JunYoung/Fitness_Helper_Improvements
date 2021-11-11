@@ -81,4 +81,4 @@ var each_Day = {
 
 -   이유기:
 
-> 1. 5pg 
+> 5pg 
