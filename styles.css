@@ -81,14 +81,26 @@ ul {list-style-type: none;}
 
 .pixel {
   background: #e3e3e3;
+  opacity: .5;
+  height: 82px;
+  width: 82px;
+  float: left;
+  margin: 2px;
+}
+
+.pixel:hover {
+  opacity: .9;
+}
+
+.weekNames {
+  background: #e3e3e3;
   opacity: .7;
-  width: 14%;
+  width: 82px;
+  float: left;
   height: 40px;
-  border-radius: 3px;
   margin: 2px;
 }
 
 .row {
-  display: flex;
   justify-content: center;
 }
