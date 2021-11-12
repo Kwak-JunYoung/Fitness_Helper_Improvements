@@ -1,108 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Workout Routine">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Kwak Junyoung">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Workout Routine" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Kwak Junyoung" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="Title" style="margin:auto">Fitness Helper</a>
+        <a class="navbar-brand" href="#" id="Title" style="margin: auto"
+          >Fitness Helper</a
+        >
       </div>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="threeButtons">
         <button type="button" class="btn btn-info">Main</button>
         <button type="button" class="btn btn-info">Personal Routine</button>
-        <a href="Playlist.html"><button type="button" class="btn btn-info">Playlist</button></a>
+        <a href="Playlist.html"
+          ><button type="button" class="btn btn-info">Playlist</button></a
+        >
       </div>
-    </nav>    
+    </nav>
   </head>
   <body>
+    <div class="container">
+      <div class="calendarPane">
+        <!-- Calendar Storage-->
 
-  <div class="calendarPane">    <!-- Calendar Storage-->
+        <div class="month">
+          <ul>
+            <li class="next">&#10095;</li>
+            <li class="prev">&#10094;</li>
+            <li>November<br /><span style="font-size: 18px">2021</span></li>
+          </ul>
+        </div>
 
-    <div class="month">
-      <ul>
-        <li class="next">&#10095;</li>
-        <li class="prev">&#10094;</li>
-        <li>November<br><span style="font-size: 18px">2021</span></li>
-      </ul>
+        <div class="d-flex">
+          <div class="row d-flex">
+            <div id="pixel-0-0" class="pixel">.</div>
+            <div id="pixel-0-1" class="pixel">7</div>
+            <div id="pixel-0-2" class="pixel">14</div>
+            <div id="pixel-0-3" class="pixel">21</div>
+            <div id="pixel-0-4" class="pixel">28</div>
+          </div>
+
+          <div class="row">
+            <div id="pixel-1-0" class="pixel">1</div>
+            <div id="pixel-1-1" class="pixel">8</div>
+            <div id="pixel-1-2" class="pixel">15</div>
+            <div id="pixel-1-3" class="pixel">22</div>
+            <div id="pixel-1-4" class="pixel">29</div>
+          </div>
+
+          <div class="row">
+            <div id="pixel-2-0" class="pixel">2</div>
+            <div id="pixel-2-1" class="pixel">9</div>
+            <div id="pixel-2-2" class="pixel">16</div>
+            <div id="pixel-2-3" class="pixel">23</div>
+            <div id="pixel-2-4" class="pixel">30</div>
+          </div>
+
+          <div class="row">
+            <div id="pixel-3-0" class="pixel">3</div>
+            <div id="pixel-3-1" class="pixel">10</div>
+            <div id="pixel-3-2" class="pixel">17</div>
+            <div id="pixel-3-3" class="pixel">24</div>
+            <div id="pixel-3-4" class="pixel">.</div>
+          </div>
+
+          <div class="row">
+            <div id="pixel-4-0" class="pixel">4</div>
+            <div id="pixel-4-1" class="pixel">11</div>
+            <div id="pixel-4-2" class="pixel">18</div>
+            <div id="pixel-4-3" class="pixel">25</div>
+            <div id="pixel-4-4" class="pixel">.</div>
+          </div>
+
+          <div class="row">
+            <div id="pixel-5-0" class="pixel">5</div>
+            <div id="pixel-5-1" class="pixel">12</div>
+            <div id="pixel-5-2" class="pixel">19</div>
+            <div id="pixel-5-3" class="pixel">26</div>
+            <div id="pixel-5-4" class="pixel">.</div>
+          </div>
+
+          <div class="row">
+            <div id="pixel-6-0" class="pixel">6</div>
+            <div id="pixel-6-1" class="pixel">13</div>
+            <div id="pixel-6-2" class="pixel">20</div>
+            <div id="pixel-6-3" class="pixel">27</div>
+            <div id="pixel-6-4" class="pixel">.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="midpane">
+        <input
+          type="button"
+          value="식단 추가"
+          onclick="showPopup();"
+          id="addWorkoutButton"
+        />
+        <input
+          type="button"
+          value="운동 추가"
+          onclick="showPopup();"
+          id="addWorkoutButton"
+        />
+      </div>
+      <div class="rightpane">
+        <input
+          type="button"
+          value="팝업창 호출"
+          onclick="showPopup();"
+          id="addWorkoutButton"
+        />
+      </div>
     </div>
-
-    <div class="d-flex">
-      <div class="row d-flex">
-        <div id="pixel-0-0" class="pixel">.</div>
-        <div id="pixel-0-1" class="pixel">7</div>
-        <div id="pixel-0-2" class="pixel">14</div>
-        <div id="pixel-0-3" class="pixel">21</div>
-        <div id="pixel-0-4" class="pixel">28</div>
-      </div>
-
-      <div class="row">
-        <div id="pixel-1-0" class="pixel">1</div>
-        <div id="pixel-1-1" class="pixel">8</div>
-        <div id="pixel-1-2" class="pixel">15</div>
-        <div id="pixel-1-3" class="pixel">22</div>
-        <div id="pixel-1-4" class="pixel">29</div>
-      </div>
-
-      <div class="row">
-        <div id="pixel-2-0" class="pixel">2</div>
-        <div id="pixel-2-1" class="pixel">9</div>
-        <div id="pixel-2-2" class="pixel">16</div>
-        <div id="pixel-2-3" class="pixel">23</div>
-        <div id="pixel-2-4" class="pixel">30</div>
-      </div>
-
-      <div class="row">
-        <div id="pixel-3-0" class="pixel">3</div>
-        <div id="pixel-3-1" class="pixel">10</div>
-        <div id="pixel-3-2" class="pixel">17</div>
-        <div id="pixel-3-3" class="pixel">24</div>
-        <div id="pixel-3-4" class="pixel">.</div>
-      </div>
-
-      <div class="row">
-        <div id="pixel-4-0" class="pixel">4</div>
-        <div id="pixel-4-1" class="pixel">11</div>
-        <div id="pixel-4-2" class="pixel">18</div>
-        <div id="pixel-4-3" class="pixel">25</div>
-        <div id="pixel-4-4" class="pixel">.</div>
-      </div>
-
-      <div class="row">
-        <div id="pixel-5-0" class="pixel">5</div>
-        <div id="pixel-5-1" class="pixel">12</div>
-        <div id="pixel-5-2" class="pixel">19</div>
-        <div id="pixel-5-3" class="pixel">26</div>
-        <div id="pixel-5-4" class="pixel">.</div>
-      </div>
-
-      <div class="row">
-        <div id="pixel-6-0" class="pixel">6</div>
-        <div id="pixel-6-1" class="pixel">13</div>
-        <div id="pixel-6-2" class="pixel">20</div>
-        <div id="pixel-6-3" class="pixel">27</div>
-        <div id="pixel-6-4" class="pixel">.</div>
-      </div> 
-         
-    </div>
-
-  </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-
-    </script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="addWorkout.js"></script>
   </body>
 </html>
