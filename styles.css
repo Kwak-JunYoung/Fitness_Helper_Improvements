@@ -131,3 +131,10 @@ ul {
   color: #555454;
   margin: 10px;
 }
+.memo {
+  height: 200px;
+}
+.memo:empty:before {
+  content: attr(placeholder);
+  color: #99a7af;
+}

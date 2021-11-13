@@ -1,7 +1,20 @@
-function showPopup() {
-  window.open(
-    "AddingWorkout.html",
-    "a",
-    "width=800, height=500, left=500, top=250"
-  );
+function onDisplayWorkout() {
+  var clickshow = document.getElementById("clickshow");
+  var addButtons = document.getElementById("addButtons");
+
+  if (clickshow.style.display === "none") {
+    clickshow.style.display = "block";
+  }
+  if (addButtons.style.display === "block") {
+    addButtons.style.display = "none";
+  }
+}
+function ReturnNormal() {
+  var clickshow = document.getElementById("clickshow");
+  if (clickshow.style.display === "block") {
+    clickshow.style.display = "none";
+  }
+  if (addButtons.style.display === "none") {
+    addButtons.style.display = "block";
+  }
 }
