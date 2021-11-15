@@ -46,69 +46,68 @@
             <li class="prev">&#10094;</li>
             <li>November<br /><span style="font-size: 18px">2021</span></li>
           </ul>
-        </div>
 
-        <div class="d-flex">
-          <div class="row d-flex">
-            <div id="pixel-0-0" class="pixel">.</div>
-            <div id="pixel-0-1" class="pixel">7</div>
-            <div id="pixel-0-2" class="pixel">14</div>
-            <div id="pixel-0-3" class="pixel">21</div>
-            <div id="pixel-0-4" class="pixel">28</div>
-          </div>
-
-          <div class="row">
-            <div id="pixel-1-0" class="pixel">1</div>
-            <div id="pixel-1-1" class="pixel">8</div>
-            <div id="pixel-1-2" class="pixel">15</div>
-            <div id="pixel-1-3" class="pixel">22</div>
-            <div id="pixel-1-4" class="pixel">29</div>
-          </div>
-
-          <div class="row">
-            <div id="pixel-2-0" class="pixel">2</div>
-            <div id="pixel-2-1" class="pixel">9</div>
-            <div id="pixel-2-2" class="pixel">16</div>
-            <div id="pixel-2-3" class="pixel">23</div>
-            <div id="pixel-2-4" class="pixel">30</div>
-          </div>
-
-          <div class="row">
-            <div id="pixel-3-0" class="pixel">3</div>
-            <div id="pixel-3-1" class="pixel">10</div>
-            <div id="pixel-3-2" class="pixel">17</div>
-            <div id="pixel-3-3" class="pixel">24</div>
-            <div id="pixel-3-4" class="pixel">.</div>
-          </div>
-
-          <div class="row">
-            <div id="pixel-4-0" class="pixel">4</div>
-            <div id="pixel-4-1" class="pixel">11</div>
-            <div id="pixel-4-2" class="pixel">18</div>
-            <div id="pixel-4-3" class="pixel">25</div>
-            <div id="pixel-4-4" class="pixel">.</div>
-          </div>
-
-          <div class="row">
-            <div id="pixel-5-0" class="pixel">5</div>
-            <div id="pixel-5-1" class="pixel">12</div>
-            <div id="pixel-5-2" class="pixel">19</div>
-            <div id="pixel-5-3" class="pixel">26</div>
-            <div id="pixel-5-4" class="pixel">.</div>
-          </div>
-
-          <div class="row">
-            <div id="pixel-6-0" class="pixel">6</div>
-            <div id="pixel-6-1" class="pixel">13</div>
-            <div id="pixel-6-2" class="pixel">20</div>
-            <div id="pixel-6-3" class="pixel">27</div>
-            <div id="pixel-6-4" class="pixel">.</div>
-          </div>
+          <table style="margin: auto">
+            <tr>
+              <td id="sunday" class="weekNames">SUN</td>
+              <td id="monday" class="weekNames">MON</td>
+              <td id="tuesday" class="weekNames">TUE</td>
+              <td id="wednesday" class="weekNames">WED</td>
+              <td id="thursday" class="weekNames">THU</td>
+              <td id="friday" class="weekNames">FRI</td>
+              <td id="saturday" class="weekNames">SAT</td>
+            </tr>
+            <tr>
+              <td id="pixel-0-0" class="pixel">.</td>
+              <td id="pixel-0-1" class="pixel">1</td>
+              <td id="pixel-0-2" class="pixel">2</td>
+              <td id="pixel-0-3" class="pixel">3</td>
+              <td id="pixel-0-4" class="pixel">4</td>
+              <td id="pixel-0-5" class="pixel">5</td>
+              <td id="pixel-0-6" class="pixel">6</td>
+            </tr>
+            <tr>
+              <td id="pixel-0-0" class="pixel">7</td>
+              <td id="pixel-0-1" class="pixel">8</td>
+              <td id="pixel-0-2" class="pixel">9</td>
+              <td id="pixel-0-3" class="pixel">10</td>
+              <td id="pixel-0-4" class="pixel">11</td>
+              <td id="pixel-0-5" class="pixel">12</td>
+              <td id="pixel-0-6" class="pixel">13</td>
+            </tr>
+            <tr>
+              <td id="pixel-0-0" class="pixel">14</td>
+              <td id="pixel-0-1" class="pixel">15</td>
+              <td id="pixel-0-2" class="pixel">16</td>
+              <td id="pixel-0-3" class="pixel">17</td>
+              <td id="pixel-0-4" class="pixel">18</td>
+              <td id="pixel-0-5" class="pixel">19</td>
+              <td id="pixel-0-6" class="pixel">20</td>
+            </tr>
+            <tr>
+              <td id="pixel-0-0" class="pixel">21</td>
+              <td id="pixel-0-1" class="pixel">22</td>
+              <td id="pixel-0-2" class="pixel">23</td>
+              <td id="pixel-0-3" class="pixel">24</td>
+              <td id="pixel-0-4" class="pixel">25</td>
+              <td id="pixel-0-5" class="pixel">26</td>
+              <td id="pixel-0-6" class="pixel">27</td>
+            </tr>
+            <tr>
+              <td id="pixel-0-0" class="pixel">28</td>
+              <td id="pixel-0-1" class="pixel">29</td>
+              <td id="pixel-0-2" class="pixel">30</td>
+              <td id="pixel-0-3" class="pixel">.</td>
+              <td id="pixel-0-4" class="pixel">.</td>
+              <td id="pixel-0-5" class="pixel">.</td>
+              <td id="pixel-0-6" class="pixel">.</td>
+            </tr>
+          </table>
         </div>
       </div>
 
-      <div class="midpane">
-        <div id="addButtons" style="display: block">
+      <div class="midpane" id="midpane" style="display: block">
+        <div class="d-flex flex-column">
           <div
             class="memo"
             contenteditable="true"
@@ -128,102 +127,104 @@
             id="addWorkoutButton"
           />
         </div>
-        <div id="clickshow" style="display: none">
-          <input type="date" value="date" id="addWorkoutButton" />
-          <div class="training">
-            <p>운동 구분</p>
+      </div>
+      <div class="restpane" id="clickshow" style="display: none">
+        <input type="date" value="date" id="addWorkoutButton" />
+        <div class="training">
+          <p>운동 구분</p>
+
+          <input
+            type="checkbox"
+            name="what_train"
+            value="웨이트트레이닝"
+            onclick="getCheckboxValue(event)"
+          />웨이트 트레이닝
+
+          <input
+            type="checkbox"
+            name="what_train"
+            value="유산소"
+            onclick="getCheckboxValue(event)"
+          />유산소
+        </div>
+        <div class="training">
+          <p>운동 상세 부위</p>
+          <div>
+            <input
+              type="checkbox"
+              name="what_train"
+              value="등"
+              onclick="getCheckboxValue(event)"
+            />등
 
             <input
               type="checkbox"
               name="what_train"
-              value="웨이트트레이닝"
+              value="가슴"
               onclick="getCheckboxValue(event)"
-            />웨이트 트레이닝
+            />가슴
 
             <input
               type="checkbox"
               name="what_train"
-              value="유산소"
+              value="어깨"
               onclick="getCheckboxValue(event)"
-            />유산소
-          </div>
-          <div class="training">
-            <p>운동 상세 부위</p>
+            />어깨
+
+            <input
+              type="checkbox"
+              name="what_train"
+              value="하체"
+              onclick="getCheckboxValue(event)"
+            />하체
             <div>
               <input
                 type="checkbox"
                 name="what_train"
-                value="등"
+                value="이두"
                 onclick="getCheckboxValue(event)"
-              />등
+              />이두
 
               <input
                 type="checkbox"
                 name="what_train"
-                value="가슴"
+                value="삼두"
                 onclick="getCheckboxValue(event)"
-              />가슴
+              />삼두
 
               <input
                 type="checkbox"
                 name="what_train"
-                value="어깨"
+                value="힙"
                 onclick="getCheckboxValue(event)"
-              />어깨
+              />힙
 
               <input
                 type="checkbox"
                 name="what_train"
-                value="하체"
+                value="승모"
                 onclick="getCheckboxValue(event)"
-              />하체
-              <div>
-                <input
-                  type="checkbox"
-                  name="what_train"
-                  value="이두"
-                  onclick="getCheckboxValue(event)"
-                />이두
+              />승모
 
-                <input
-                  type="checkbox"
-                  name="what_train"
-                  value="삼두"
-                  onclick="getCheckboxValue(event)"
-                />삼두
-
-                <input
-                  type="checkbox"
-                  name="what_train"
-                  value="힙"
-                  onclick="getCheckboxValue(event)"
-                />힙
-
-                <input
-                  type="checkbox"
-                  name="what_train"
-                  value="승모"
-                  onclick="getCheckboxValue(event)"
-                />승모
-
-                <input
-                  type="checkbox"
-                  name="what_train"
-                  value="복근"
-                  onclick="getCheckboxValue(event)"
-                />복근
-              </div>
+              <input
+                type="checkbox"
+                name="what_train"
+                value="복근"
+                onclick="getCheckboxValue(event)"
+              />복근
             </div>
           </div>
-          <input
-            type="button"
-            value="운동추가하기"
-            onclick="ReturnNormal();"
-            id="addWorkoutButton"
-          />
         </div>
+        <input
+          type="button"
+          value="운동추가하기"
+          onclick="ReturnNormal();"
+          id="addWorkoutButton"
+        />
       </div>
-      <div class="rightpane">ㅁㅁㅁㅁㅁㅁㅁㅁㅁ</div>
+      <div class="rightpane" id="rightpane" style="display: block">
+        ㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

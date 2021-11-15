@@ -39,6 +39,7 @@ body {
   float: right;
   border: 2px dashed rgb(168, 168, 168);
   border-radius: 3px;
+  padding: 50px;
 }
 
 #memo {
@@ -137,4 +138,21 @@ ul {
 .memo:empty:before {
   content: attr(placeholder);
   color: #99a7af;
+}
+.month {
+  padding: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.prev {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+.pixel:hover {
+  opacity: 0.9;
 }
