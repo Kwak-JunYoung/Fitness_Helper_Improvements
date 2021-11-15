@@ -117,7 +117,7 @@
           <input
             type="button"
             value="식단 추가"
-            onclick=""
+            onclick="diet();"
             id="addWorkoutButton"
           />
           <input
@@ -222,8 +222,56 @@
           id="addWorkoutButton"
         />
       </div>
+      <div class="restpane" id="restpane1" style="display: none">
+        <p class="threepane">
+          <span class="highlight">- 아침</span>
+        </p>
+        <p class="threepane">
+          <span class="highlight">- 점심</span>
+        </p>
+        <p class="threepane">
+          <span class="highlight">- 저녁</span>
+        </p>
+        <p class="under">
+          <input
+            type="button"
+            value="여기에 추가하기"
+            onclick="ReturnNormal();dietinsert();"
+            id="add_diet"
+          />
+        </p>
+      </div>
       <div class="rightpane" id="rightpane" style="display: block">
-        ㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+        <div>
+          <label class="switch">
+            <span class="slider round">Bench Press</span>
+            <input type="checkbox" />
+          </label>
+          <br />
+          <br />
+          <label class="switch">
+            <span class="slider round">Bench Press</span>
+            <input type="checkbox" />
+          </label>
+          <br />
+          <br />
+          <label class="switch">
+            <span class="slider round">Bench Press</span>
+            <input type="checkbox" />
+          </label>
+          <br />
+          <br />
+          <label class="switch">
+            <span class="slider round">Bench Press</span>
+            <input type="checkbox" />
+          </label>
+          <br />
+          <br />
+          <label class="switch">
+            <span class="slider round">Bench Press</span>
+            <input type="checkbox" />
+          </label>
+        </div>
       </div>
     </div>
     <script

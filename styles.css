@@ -156,3 +156,10 @@ ul {
 .pixel:hover {
   opacity: 0.9;
 }
+.threepane {
+  width: 33%;
+  float: left;
+  border: 3px;
+  padding: 50px;
+  text-align: left;
+}
