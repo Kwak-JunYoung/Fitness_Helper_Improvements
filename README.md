@@ -4,13 +4,35 @@
 
 -   Provides user the information of the number of people at the gym, and keeps track of the user's workout routine.
 
-## Example
+## Links to resources
+
+## Installation
+-   
+
+## API reference
+-   
+
+## Examples
 
 -   Needs insertion later
 
-## 1. Releases
+## Releases
 
 -   We will release it someday...
+
+## How to contribute
+-   Leave issues so that one of us can take a look and decide whether to make changes or not.
+
+## [License](https://choosealicense.com/licenses/mit/#)
+
+## Code of Conduct
+-   When manipulating Master branch(e.g. merge), at least two people in a team needs to be tracking it.
+-   Code on your local machine, and ask for a code review when you are done.
+-   1 Commit a day is highly encouraged
+-   Respect each other!
+-   Empathy and kindness
+-   Be as precise as possible when reviewing others code.
+-   No trolling, insulting, harassment, etc.
 
 ## 2. History
 
@@ -44,25 +66,19 @@ var each_Day = {
 
 -   ??
 
-## 4. Code of Conduct
-
--   main branch는 가능하면 건들지 않는다.
--   미완성 기능의 경우 새로운 branch를 만들고 작업한다.
--   작업이 완료되면 Merge한다.
--   저희도 이렇게 하죠
-
 ## 5. Work
+-   공동작업
+
+> 1, 2, 3, 7pg
 
 -   곽준영:
 
-> 1. 비쥬얼 담당
+> 6pg
 
 -   진영서:
 
-> 1. 
+> 4pg
 
 -   이유기:
 
-> 1.  
-
-## 7. [License]?
+> 5pg 
