@@ -56,21 +56,6 @@ body {
   margin-top: 10px;
 }
 
-#addWorkoutButton {
-  color: rgb(82, 82, 82);
-  width: 100%;
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 25px;
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  border: 2px dashed rgb(158, 179, 192);
-  display: inline-block;
-  margin: 2px;
-}
 .btn.btn-info {
   background: #abc4d4;
   color: rgb(68, 68, 68);
@@ -162,4 +147,49 @@ ul {
   border: 3px;
   padding: 50px;
   text-align: left;
+}
+.addB {
+  color: rgb(82, 82, 82);
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 25px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  border: 2px dashed rgb(158, 179, 192);
+  display: inline-block;
+  margin: 2px;
+}
+.box1 {
+  background-color: #d0dae0;
+  height: 200px;
+  opacity: 0.8;
+  padding: 10px;
+  width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: 2px dashed rgb(201, 201, 201);
+}
+.box1 p {
+  color: red;
+  text-size-adjust: 10px;
+  line-height: 150px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.box2 {
+  padding: 20px;
+  width: 800px;
+  text-align: center;
+  margin: auto;
+}
+.box2-1 {
+  text-align: right;
+  padding-right: 10px;
+  color: red;
 }

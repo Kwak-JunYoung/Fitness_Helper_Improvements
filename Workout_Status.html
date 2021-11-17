@@ -27,8 +27,14 @@
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="threeButtons">
-        <button type="button" class="btn btn-info">Main</button>
-        <button type="button" class="btn btn-info">Personal Routine</button>
+        <a href="MainEnter.html"
+          ><button type="button" class="btn btn-info">Main</button></a
+        >
+        <a href="Workout_Status.html"
+          ><button type="button" class="btn btn-info">
+            Personal Routine
+          </button></a
+        >
         <a href="Playlist.html"
           ><button type="button" class="btn btn-info">Playlist</button></a
         >
@@ -116,12 +122,14 @@
           ></div>
           <input
             type="button"
+            class="addB"
             value="식단 추가"
             onclick="diet();"
-            id="addWorkoutButton"
+            id="addDietButton"
           />
           <input
             type="button"
+            class="addB"
             value="운동 추가"
             onclick="onDisplayWorkout();"
             id="addWorkoutButton"
@@ -129,7 +137,7 @@
         </div>
       </div>
       <div class="restpane" id="clickshow" style="display: none">
-        <input type="date" value="date" id="addWorkoutButton" />
+        <input type="date" class="addB" value="date" />
         <div class="training">
           <p>운동 구분</p>
 
@@ -217,9 +225,10 @@
         </div>
         <input
           type="button"
+          class="addB"
           value="운동추가하기"
           onclick="ReturnNormal();"
-          id="addWorkoutButton"
+          id="addingWorkout"
         />
       </div>
       <div class="restpane" id="restpane1" style="display: none">
@@ -235,6 +244,7 @@
         <p class="under">
           <input
             type="button"
+            class="addB"
             value="여기에 추가하기"
             onclick="ReturnNormal();dietinsert();"
             id="add_diet"
