@@ -30,34 +30,35 @@
         <p style="font-size: 25px">2021.11.11</p>
 
         <br />
-
         <input type="radio" id="firstMeal" name="meal" value="breakfast" />
         <label for="firstMeal" style="margin-right: 100px">아침</label>
         <input type="radio" id="secondMeal" name="meal" value="lunch" />
         <label for="secondMeal" style="margin-right: 100px">점심</label>
         <input type="radio" id="thirdMeal" name="meal" value="dinner" />
         <label for="thirdMeal" style="margin-right: 100px">저녁</label>
+        
+        <br />
+        <br />
+        <br />
 
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <textarea
+        <input
+          type='text'
           id="menu"
           name="menu"
           rows="1"
           cols="50"
           placeholder="메뉴입력"
-          style="margin-right: 100px"
-        ></textarea>
-        <textarea
+          style="float: left"
+        ></input>
+        <input
+          type='text'
           id="weight"
           name="weight"
           rows="1"
-          cols="30"
+          cols="50"
           placeholder="무게입력(g)"
-        ></textarea>
+          style="float: left"
+        ></input>
 
         <br />
         <br />
@@ -68,6 +69,7 @@
           class="addB"
           style="float: right"
           id="addMenuButton"
+          onclick="storeDiet()"
         >
           추가하기
         </button>

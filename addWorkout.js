@@ -44,7 +44,15 @@ function diet() {
   if (rightpane.style.display === "block") {
     rightpane.style.display = "none";
   }
+  console.log(localStorage.getItem("menu"));
+  console.log(localStorage.getItem("weight"));  
 }
 function dietinsert() {
   window.open("diet.html", "add_diet", "width=500, height=600");
+}
+function getDietInfo() {
+
+  console.log(localStorage.getItem("menu"));
+  console.log(localStorage.getItem("weight"));
+  console.log(localStorage.getItem("time"));
 }
