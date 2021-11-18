@@ -1,10 +1,7 @@
 function storeDiet() {
-    var input = document.getElementById("menu_breakfast").value;
-    var input2 = document.getElementById("weight_breakfast").value;
-    var input = document.getElementById("menu_lunch").value;
-    var input2 = document.getElementById("weight_lunch").value;
-    var input = document.getElementById("menu_dinner").value;
-    var input2 = document.getElementById("weight_dinner").value;
+    // localStorage.clear();
+    var input = document.getElementById("menu").value;
+    var input2 = document.getElementById("weight").value;
 
     var dummy = document.querySelectorAll('input[name="meal"]');
     let selectedTime;
@@ -16,20 +13,48 @@ function storeDiet() {
         }
     }
 
-    var old = "";
+    var old = new Array();
 
     localStorage.setItem("time", selectedTime);
     // 시간별로 메뉴추가해야
 
-    var menuStorage = localStorage.getItem("menu");
-    if (menuStorage === null) old = "";
-    localStorage.setItem("menu", input + old);
+    if (selectedTime === "breakfast"){
+        if (typeof localStorage.getItem("breakfast_menu") === 'null'){
+            localStorage.setItem("breakfast_menu", JSON.stringify([input]));
+            console.log(localStorage.getItem("breakfast_menu"));
+        }
+        else{
+            localStorage.setItem("breakfast_menu", JSON.parse(localStorage.getItem("breakfast_menu")).push(input));
+        }
+        console.log(localStorage.getItem("breakfast_menu"));
+    }
 
-    old="";
-
-    var weightStorage = localStorage.getItem("weight");
-    if (weightStorage === null) old = "";
-    localStorage.setItem("weight", input2 + old)
+    if (selectedTime === "lunch"){
+        var old = localStorage.getItem("menu_lunch");
+        if (old === null) old = [input];
+        else old.push(input);
+        localStorage.setItem("menu_lunch", old);
     
-    window.close("diet.html");
+        old = new Array();
+    
+        var old = localStorage.getItem("weight_lunch");
+        if (old === null) old = [input2];
+        else old.push(input2);
+        localStorage.setItem("weight_lunch", old)
+    }
+
+    if (selectedTime === "dinner"){
+        var old = localStorage.getItem("menu_dinner");
+        if (old === null) old = [input];
+        else old.push(input);
+        localStorage.setItem("menu_dinner", old);
+    
+        old = new Array();
+    
+        var old = localStorage.getItem("weight_dinner");
+        if (old === null) old = [input2];
+        else old.push(input2);
+        localStorage.setItem("weight_dinner", old)
+    }    
+    // window.close("diet.html");
 }

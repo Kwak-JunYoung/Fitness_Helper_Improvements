@@ -51,8 +51,10 @@ function dietinsert() {
   window.open("diet.html", "add_diet", "width=500, height=600");
 }
 function getDietInfo() {
-
-  console.log(localStorage.getItem("menu"));
-  console.log(localStorage.getItem("weight"));
-  console.log(localStorage.getItem("time"));
+  console.log("Breakfast Menu: " + localStorage.getItem("menu_breakfast"));
+  console.log("Breakfast Weight: " + localStorage.getItem("weight_breakfast"));
+  console.log("Lunch Menu: " + localStorage.getItem("menu_lunch"));
+  console.log("Lunch Weight: " + localStorage.getItem("weight_lunch"));
+  console.log("Dinner Menu: " + localStorage.getItem("menu_dinner"));
+  console.log("Dinner Weight: " + localStorage.getItem("weight_dinner"));    
 }
