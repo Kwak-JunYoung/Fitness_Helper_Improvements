@@ -335,32 +335,38 @@
     <script>
       let train=[];
 
+      function LoadTasks(ymd){
+        let lastTasks= localStorage.getItem(ymd);
+
+      }
+
       function SaveTasks(ymd){
         localStorage.setItem(ymd, JSON.stringify(train));
       }
 
         document.querySelector("#addingWorkout").addEventListener("click", () => {
           
-          let train_d= {
-            date: null,
-            운동구분: null,
-            "운동 상세 부위": null,
-            "운동 횟수": null,
-            "운동 무게": null
+          let train_d= {};
+          let train_e= {
+            "운동 구분": null, 
+            "상세 부위": null,
+            "횟수": null,
+            "무게": null,
           };
+
 				  //1. 날짜 저장
           let ymd= document.getElementById("date").value;
-          train_d["date"]= ymd;
+          train_d[ymd]= [];
 
 
           //2. 운동 구분
           let f1= document.getElementById("what_train1_1");
           let f2= document.getElementById("what_train1_2");
-          
+
           if(f1.checked){
-            train_d["운동구분"]= f1.value;
+            train_e["운동 구분"] =f1.value;
           } else {
-            train_d["운동구분"]= f2.value;
+            train_e["운동 구분"]= f2.value;
           }
 
           //3. 운동 상세 부위
@@ -383,21 +389,40 @@
           if(s8.checked) part.push(s8.value);
           let s9= document.getElementById("what_train2_9");
           if(s9.checked) part.push(s9.value);
-
-          train_d["운동 상세 부위"]= part;
-
+          
+          train_e["상세 부위"]= part;
 
           //4. 횟수
           let t_num= document.getElementById("train_num").value;
-          train_d["운동 횟수"]= t_num;
-
+          train_e["횟수"]= t_num;
+          
           //5. 운동 무게
           let t_weight= document.getElementById("train_weight").value;
-          train_d["운동 무게"]= t_weight;
+          train_e["무게"]= t_weight;
 
           //6. 추가하기
-          train.push(train_d);
+          let num=train.length;
+          
+          let add=0;
+          for(i=0; i< num; i++){
+            if(ymd in train[i]){
+              train[i][ymd].push(train_e);
+              add=1;
+              break;
+            }
+          }
+          if(add===0){
+            train_d[ymd].push(train_e);
+            train.push(train_d);
+          }
+
+          
           SaveTasks(ymd);
+          //console.log(train);
+          //localStorage.clear();
+          console.log(localStorage);
+
+
           
 			  })
         
