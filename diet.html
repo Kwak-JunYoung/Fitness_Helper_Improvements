@@ -24,45 +24,56 @@
     />
   </head>
   <body>
-    <div>
-      <div id="addMenu" style="display: block">
-        <p style="font-size: 30px; text-align: center">메뉴 추가</p>
-        <p style="font-size: 25px">2021.11.11</p>
-
-        <br />
-
-        <input type="radio" id="firstMeal" name="meal" value="breakfast" />
-        <label for="firstMeal" style="margin-right: 100px">아침</label>
-        <input type="radio" id="secondMeal" name="meal" value="lunch" />
-        <label for="secondMeal" style="margin-right: 100px">점심</label>
-        <input type="radio" id="thirdMeal" name="meal" value="dinner" />
-        <label for="thirdMeal" style="margin-right: 100px">저녁</label>
-
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <textarea
-          id="menu"
-          name="menu"
-          rows="1"
-          cols="50"
-          placeholder="메뉴입력"
-          style="margin-right: 100px"
-        ></textarea>
-        <textarea
-          id="weight"
-          name="weight"
-          rows="1"
-          cols="30"
-          placeholder="무게입력(g)"
-        ></textarea>
-
-        <br />
-        <br />
-        <br />
-
+    <div id="addMenu" style="display: block">
+      <div class="smallbox">
+        <div>메뉴 추가</div>
+        <div id="add_date">2021.11.11</div>
+      </div>
+      <div class="threepane">
+        <label for="diet"
+          ><input type="checkbox" name="diet" value="아침" /> 아침</label
+        >
+      </div>
+      <div class="threepane">
+        <label for="diet"
+          ><input type="checkbox" name="diet" value="점심" /> 점심</label
+        >
+      </div>
+      <div class="threepane">
+        <label for="diet"
+          ><input type="checkbox" name="diet" value="저녁" /> 저녁</label
+        >
+      </div>
+      <div>
+        <p>
+          <label for="diet"
+            >menu:
+            <input
+              type="text"
+              name="diet"
+              placeholder="메뉴입력"
+              required
+              minlength="1"
+              minlength="40"
+              size="8"
+              style="width: 200px"
+          /></label>
+        </p>
+      </div>
+      <div>
+        <p>
+          <label for="diet"
+            >weight:
+            <input
+              type="number"
+              name="diet"
+              placeholder="무게입력"
+              size="8"
+              style="width: 100px"
+            />
+            g</label
+          >
+        </p>
         <button
           type="button"
           class="addB"

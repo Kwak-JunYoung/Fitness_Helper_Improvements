@@ -46,5 +46,5 @@ function diet() {
   }
 }
 function dietinsert() {
-  window.open("diet.html", "add_diet", "width=500, height=600");
+  window.open("diet.html", "add_diet", "width=500, height=400");
 }
