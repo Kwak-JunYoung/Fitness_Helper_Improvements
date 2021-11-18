@@ -30,6 +30,7 @@
 
 ## Code of Conduct
 
+
 - When manipulating Master branch(e.g. merge), at least two people in a team needs to be tracking it.
 - Code on your local machine, and ask for a code review when you are done.
 - 1 Commit a day is highly encouraged
@@ -37,6 +38,7 @@
 - Empathy and kindness
 - Be as precise as possible when reviewing others code.
 - No trolling, insulting, harassment, etc.
+
 
 ## 2. History
 
