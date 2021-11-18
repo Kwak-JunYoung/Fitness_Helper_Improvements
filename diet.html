@@ -7,7 +7,7 @@
     <meta name="description" content="Workout Routine" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Kwak Junyoung" />
-
+    <title>Add Diet</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -64,6 +64,52 @@
         <br />
         <br />
 
+      </div>
+      <div class="threepane">
+        <label for="diet"
+          ><input type="checkbox" name="diet" value="아침" /> 아침</label
+        >
+      </div>
+      <div class="threepane">
+        <label for="diet"
+          ><input type="checkbox" name="diet" value="점심" /> 점심</label
+        >
+      </div>
+      <div class="threepane">
+        <label for="diet"
+          ><input type="checkbox" name="diet" value="저녁" /> 저녁</label
+        >
+      </div>
+      <div>
+        <p>
+          <label for="diet"
+            >menu:
+            <input
+              type="text"
+              name="diet"
+              placeholder="메뉴입력"
+              required
+              minlength="1"
+              minlength="40"
+              size="8"
+              style="width: 200px"
+          /></label>
+        </p>
+      </div>
+      <div>
+        <p>
+          <label for="diet"
+            >weight:
+            <input
+              type="number"
+              name="diet"
+              placeholder="무게입력"
+              size="8"
+              style="width: 100px"
+            />
+            g</label
+          >
+        </p>
         <button
           type="button"
           class="addB"
@@ -91,6 +137,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <script type="text/javascript" src="add_diet.js"></script>
   </body>
 </html>
