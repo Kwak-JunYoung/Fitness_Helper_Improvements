@@ -65,3 +65,11 @@ function returndiet() {
     clickdelete.style.display = "none";
   }
 }
+function getDietInfo() {
+  console.log(localStorage.getItem("menu_breakfast"));
+  console.log(localStorage.getItem("weight_breakfast"));
+  console.log(localStorage.getItem("menu_lunch"));
+  console.log(localStorage.getItem("weight_lunch"));
+  console.log(localStorage.getItem("menu_dinner"));
+  console.log(localStorage.getItem("weight_dinner"));
+}
