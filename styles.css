@@ -132,6 +132,20 @@ ul {
   color: #555454;
   margin: 10px;
 }
+
+.training.half {
+  width: 47%;
+  float: left;
+}
+
+.halfpane {
+  width: 50%;
+  height: auto;
+  float: left;
+  border-radius: 3px;
+  padding: 10px;
+}
+
 .memo {
   height: 200px;
 }
