@@ -2,37 +2,41 @@
 
 ## A Brief Overview
 
--   Provides user the information of the number of people at the gym, and keeps track of the user's workout routine.
+- Provides user the information of the number of people at the gym, and keeps track of the user's workout routine.
 
 ## Links to resources
 
 ## Installation
--   
+
+-
 
 ## API reference
--   
+
+-
 
 ## Examples
 
--   Needs insertion later
+- Needs insertion later
 
 ## Releases
 
--   We will release it someday...
+- We will release it someday...
 
 ## How to contribute
--   Leave issues so that one of us can take a look and decide whether to make changes or not.
+
+- Leave issues so that one of us can take a look and decide whether to make changes or not.
 
 ## [License](https://choosealicense.com/licenses/mit/#)
 
 ## Code of Conduct
--   When manipulating Master branch(e.g. merge), at least two people in a team needs to be tracking it.
--   Code on your local machine, and ask for a code review when you are done.
--   1 Commit a day is highly encouraged
--   Respect each other!
--   Empathy and kindness
--   Be as precise as possible when reviewing others code.
--   No trolling, insulting, harassment, etc.
+
+- When manipulating Master branch(e.g. merge), at least two people in a team needs to be tracking it.
+- Code on your local machine, and ask for a code review when you are done.
+- 1 Commit a day is highly encouraged
+- Respect each other!
+- Empathy and kindness
+- Be as precise as possible when reviewing others code.
+- No trolling, insulting, harassment, etc.
 
 ## 2. History
 
@@ -64,21 +68,22 @@ var each_Day = {
 
 ## 3. Future
 
--   ??
+- ??
 
 ## 5. Work
--   공동작업
 
-> 1, 2, 3, 7pg
+- 공동작업
 
--   곽준영:
+> 메인 workout page(3ps)
 
-> 6pg
+- 곽준영:
 
--   진영서:
+> 식단 추가 페이지 프론트엔드(6pg), 점진직 과부하(right pane) 수정
 
-> 4pg
+- 진영서:
 
--   이유기:
+> 입장/퇴장 페이지 프론트엔드, 운동 페이지 프론트엔드(4pg)
 
-> 5pg 
+- 이유기:
+
+> 식단 페이지 프론트엔드(5pg), 운동 추가 세부 사항 수정, 플레이리스트 페이지(7pg)
