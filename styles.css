@@ -1,3 +1,6 @@
+* {
+  font-family: "Do Hyeon", sans-serif;
+}
 /*Resize border maybe?*/
 .threeButtons {
   /* width:44%;
@@ -9,17 +12,22 @@
 body {
   text-align: center;
 }
+#Title {
+  font-size: 30px;
+}
 .calendarPane {
   width: 32%;
   float: left;
   border: 2px dashed rgb(168, 168, 168);
+  border-radius: 10px;
   margin-right: 2%;
 }
 
 .midpane {
-  width: 30%;
+  width: 32%;
   float: left;
   border: 2px dashed rgb(168, 168, 168);
+  border-radius: 10px;
   padding: 50px;
 }
 
@@ -28,7 +36,7 @@ body {
   height: 100%;
   float: right;
   border: 2px dashed rgb(168, 168, 168);
-  border-radius: 3px;
+  border-radius: 10px;
   margin-left: 2%;
   padding: 50px;
 }
@@ -38,7 +46,7 @@ body {
   height: auto;
   float: right;
   border: 2px dashed rgb(168, 168, 168);
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 50px;
 }
 
@@ -117,8 +125,28 @@ ul {
   color: #555454;
   margin: 10px;
 }
+.training.half {
+  width: 47%;
+  float: left;
+}
+
+.halfpane {
+  width: 50%;
+  height: auto;
+  float: left;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffd0ae 50%);
+  font-size: 20px;
+}
 .memo {
   height: 200px;
+  border: 2px dashed rgb(158, 179, 192);
+  border-radius: 10px;
+  margin: 10px;
 }
 .memo:empty:before {
   content: attr(placeholder);
