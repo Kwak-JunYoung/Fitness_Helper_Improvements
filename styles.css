@@ -203,7 +203,7 @@ ul {
   border-radius: 10px;
   border: 2px dashed rgb(201, 201, 201);
 }
-.box1 p {
+#usernumber {
   color: red;
   text-size-adjust: 10px;
   line-height: 150px;
