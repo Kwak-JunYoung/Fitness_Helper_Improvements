@@ -362,43 +362,8 @@
         </div>
       </div>
       <div class="rightpane" id="rightpane" style="display: block">
-        <div>
-          <label class="switch">
-            <span class="slider round">
-              <span>Bench Press</span>
-            </span>
-            <input type="checkbox" />
-            <div><span>5</span>Sets/<span>45</span>kg/<span>8</span>times</div>
-          </label>
-          <br />
-          <br />
-          <label class="switch">
-            <span class="slider round">
-              <span>Incline Bench Press</span>
-            </span>
-            <input type="checkbox" />
-            <div><span>5</span>Sets/<span>30</span>kg/<span>15</span>times</div>
-          </label>
-          <br />
-          <br />
-          <label class="switch">
-            <span class="slider round">
-              <span>Chest Press</span>
-            </span>
-            <input type="checkbox" />
-            <div><span>5</span>Sets/<span>35</span>kg/<span>10</span>times</div>
-          </label>
-          <br />
-          <br />
-          <label class="switch">
-            <span class="slider round">
-              <span>Dips</span>
-            </span>
-            <input type="checkbox" />
-            <div><span>5</span>Sets/<span>0</span>kg/<span>5</span>times</div>
-          </label>
-          <br />
-          <br />
+        <div id= "train_goal">
+          
         </div>
       </div>
     </div>
@@ -436,9 +401,6 @@
             "횟수": null,
             "무게": null,
           };
-
-				  //localStorage.clear();
-
 
           //2. 운동 구분
           let f1= document.getElementById("what_train1_1");
@@ -505,7 +467,6 @@
           SaveTasks();
           console.log(localStorage);
           //localStorage.clear();
-
           
 			  })
         
