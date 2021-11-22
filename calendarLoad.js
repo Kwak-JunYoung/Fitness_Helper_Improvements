@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
           span.className = "slider round";
 
           let span_c1= document.createElement("span");
-			    span_c1.textContent = day_train[i]["운동 구분"];
+			    span_c1.textContent = day_train[i]["운동 이름"];
 
           //checkbox 만들기
           let check= document.createElement("input");
@@ -69,10 +69,16 @@ window.addEventListener("load", () => {
             str+= day_train[i]["상세 부위"][j];
             if(j!== (arrs-1))str+= ", ";
           }
-          str= str + "/ " + day_train[i]["횟수"] + "times/ " + day_train[i]["무게"]+ "g";
+          str= day_train[i]["운동 구분"]+ "/ " + str + "/ " + day_train[i]["횟수"] + "times/ " + day_train[i]["무게"]+ "g";
           div.textContent= str;
           label.appendChild(div);
+
+          let br= document.createElement("br");
+          let br2= document.createElement("br");
+          
           b_div.appendChild(label);
+          b_div.appendChild(br);
+          b_div.appendChild(br2);
         }
 
         let list = document.querySelector("#train_goal");
