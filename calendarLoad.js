@@ -12,7 +12,11 @@ window.addEventListener("load", () => {
 
         //0. 표시 없게
 
-        document.querySelector("#train_goal");
+        let p= document.querySelector("#train_goal");
+        document.querySelectorAll(".part").forEach(c => {
+          p.removeChild(c);
+        });
+        
 
         //1. 날짜 찾기
         let train_l= localStorage.getItem("train");
@@ -34,6 +38,7 @@ window.addEventListener("load", () => {
         //2. 붙이기
         //큰 div
         let b_div= document.createElement("div");
+        b_div.className="part";
         for(i=0; i< n2; i++){
           
           //label 만들기
@@ -69,7 +74,6 @@ window.addEventListener("load", () => {
           label.appendChild(div);
           b_div.appendChild(label);
         }
-        console.log(b_div);
 
         let list = document.querySelector("#train_goal");
 			  list.appendChild(b_div);
