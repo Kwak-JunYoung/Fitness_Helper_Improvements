@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
           span.className = "slider round";
 
           let span_c1= document.createElement("span");
-			    span_c1.textContent = day_train[i]["운동 이름"];
+			    span_c1.textContent = day_train[i]["운동 이름"] + " ";
 
           //checkbox 만들기
           let check= document.createElement("input");
