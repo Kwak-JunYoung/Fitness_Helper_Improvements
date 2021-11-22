@@ -27,7 +27,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a href="Workout_Status.html" class="navbar-brand" href="#" id="Title" style="margin: auto"
+        <a class="navbar-brand" href="#" id="Title" style="margin: auto"
           >Fitness Helper</a
         >
       </div>
@@ -267,14 +267,6 @@
           onclick="ReturnNormal();"
           id="addingWorkout"
         />
-
-        <input
-          type="button"
-          class="addB"
-          value="나가기"
-          onclick="ReturnNormal();"
-          id="addingWorkout"
-        />        
       </div>
       <div class="restpane" id="restpane1" style="display: none">
         <div id="selected_date_diet"></div>
@@ -287,32 +279,109 @@
         <p class="threepane">
           <span class="highlight">- 저녁</span>
         </p>
+
+        <br>
+
+        <p class="threepane">
+          <span id="breakfastID"></span>
+        </p>
+        <p class="threepane">
+          <span id="lunchID"></span>
+        </p>
+        <p class="threepane">
+          <span id="dinnerID"></span>
+        </p>
+        
+        <br>
+        <br>
+        
+
         <p id="breakfastMenu"></p>
-        <p class="under">
-          <input
-            type="button"
-            class="addB"
-            value="여기에 추가하기"
-            onclick="dietinsert();"
-            id="add_diet"
-          />
-        </p>
-        <p class="under">
-          <input
-            type="button"
-            class="addB"
-            value="페이지 나가기"
-            onclick="ReturnNormal();"
-          />
-        </p>
-        <p class="under">
-          <input
-            type="button"
-            class="addB"
-            value="console 확인"
-            onclick="getDietInfo();"
-          />
-        </p>                
+        <div class="under">
+          <div class="under-1">
+            <input
+              type="button"
+              class="addB"
+              value="뒤로가기"
+              onclick="ReturnNormal();"
+              id="return_back"
+            />
+          </div>
+          <div class="under-1">
+            <input
+              type="button"
+              class="addB"
+              value="여기에 추가하기"
+              onclick="showdietinsert();"
+              id="add_diet"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="restpane" id="restpane2" style="display: none">
+        <div id="addMenu" style="display: block">
+          <div class="smallbox">
+            <div>메뉴 추가</div>
+            <div id="add_diet_date"></div>
+          </div>
+          <div class="threepane">
+            <label for="diet"
+              ><input type="radio" name="meal" value="아침" /> 아침</label
+            >
+          </div>
+          <div class="threepane">
+            <label for="diet"
+              ><input type="radio" name="meal" value="점심" /> 점심</label
+            >
+          </div>
+          <div class="threepane">
+            <label for="diet"
+              ><input type="radio" name="meal" value="저녁" /> 저녁</label
+            >
+          </div>
+          <div>
+            <p>
+              <label for="diet"
+                >menu:
+                <input
+                  type="text"
+                  name="diet"
+                  placeholder="메뉴입력"
+                  required
+                  minlength="1"
+                  minlength="40"
+                  size="8"
+                  style="width: 200px"
+                  id="menu"
+              /></label>
+            </p>
+          </div>
+          <div>
+            <p>
+              <label for="diet"
+                >weight:
+                <input
+                  type="number"
+                  name="diet"
+                  placeholder="무게입력"
+                  size="8"
+                  style="width: 100px"
+                  id="weight"
+                />
+                g</label
+              >
+            </p>
+            <button
+              type="button"
+              class="addB"
+              style="float: right"
+              id="addMenuButton"
+              onclick="storeDiet();getDietInfo();returndiet();"
+            >
+              추가하기
+            </button>
+          </div>
+        </div>
       </div>
       <div class="rightpane" id="rightpane" style="display: block">
         <div>
@@ -321,9 +390,7 @@
               <span>Bench Press</span>
             </span>
             <input type="checkbox" />
-            <div>
-              <span>5</span>Sets/<span>45</span>kg/<span>8</span>times
-            </div>
+            <div><span>5</span>Sets/<span>45</span>kg/<span>8</span>times</div>
           </label>
           <br />
           <br />
@@ -332,9 +399,7 @@
               <span>Incline Bench Press</span>
             </span>
             <input type="checkbox" />
-            <div>
-              <span>5</span>Sets/<span>30</span>kg/<span>15</span>times
-            </div>
+            <div><span>5</span>Sets/<span>30</span>kg/<span>15</span>times</div>
           </label>
           <br />
           <br />
@@ -343,9 +408,7 @@
               <span>Chest Press</span>
             </span>
             <input type="checkbox" />
-            <div>
-              <span>5</span>Sets/<span>35</span>kg/<span>10</span>times
-            </div>
+            <div><span>5</span>Sets/<span>35</span>kg/<span>10</span>times</div>
           </label>
           <br />
           <br />
@@ -354,9 +417,7 @@
               <span>Dips</span>
             </span>
             <input type="checkbox" />
-            <div>
-              <span>5</span>Sets/<span>0</span>kg/<span>5</span>times
-            </div>
+            <div><span>5</span>Sets/<span>0</span>kg/<span>5</span>times</div>
           </label>
           <br />
           <br />
