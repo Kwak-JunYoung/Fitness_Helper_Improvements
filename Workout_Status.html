@@ -71,49 +71,49 @@
               <td id="saturday" class="weekNames">SAT</td>
             </tr>
             <tr>
-              <td id="pixel-0-0" class="pixel">.</td>
-              <td id="pixel-0-1" class="pixel">1</td>
-              <td id="pixel-0-2" class="pixel">2</td>
-              <td id="pixel-0-3" class="pixel">3</td>
-              <td id="pixel-0-4" class="pixel">4</td>
-              <td id="pixel-0-5" class="pixel">5</td>
-              <td id="pixel-0-6" class="pixel">6</td>
+              <td class="pixel">.</td>
+              <td id="2021-11-01" class="pixel">1</td>
+              <td id="2021-11-02" class="pixel">2</td>
+              <td id="2021-11-03" class="pixel">3</td>
+              <td id="2021-11-04" class="pixel">4</td>
+              <td id="2021-11-05" class="pixel">5</td>
+              <td id="2021-11-06" class="pixel">6</td>
             </tr>
             <tr>
-              <td id="pixel-0-0" class="pixel">7</td>
-              <td id="pixel-0-1" class="pixel">8</td>
-              <td id="pixel-0-2" class="pixel">9</td>
-              <td id="pixel-0-3" class="pixel">10</td>
-              <td id="pixel-0-4" class="pixel">11</td>
-              <td id="pixel-0-5" class="pixel">12</td>
-              <td id="pixel-0-6" class="pixel">13</td>
+              <td id="2021-11-07" class="pixel">7</td>
+              <td id="2021-11-08" class="pixel">8</td>
+              <td id="2021-11-09" class="pixel">9</td>
+              <td id="2021-11-10" class="pixel">10</td>
+              <td id="2021-11-11" class="pixel">11</td>
+              <td id="2021-11-12" class="pixel">12</td>
+              <td id="2021-11-13" class="pixel">13</td>
             </tr>
             <tr>
-              <td id="pixel-0-0" class="pixel">14</td>
-              <td id="pixel-0-1" class="pixel">15</td>
-              <td id="pixel-0-2" class="pixel">16</td>
-              <td id="pixel-0-3" class="pixel">17</td>
-              <td id="pixel-0-4" class="pixel">18</td>
-              <td id="pixel-0-5" class="pixel">19</td>
-              <td id="pixel-0-6" class="pixel">20</td>
+              <td id="2021-11-14" class="pixel">14</td>
+              <td id="2021-11-15" class="pixel">15</td>
+              <td id="2021-11-16" class="pixel">16</td>
+              <td id="2021-11-17" class="pixel">17</td>
+              <td id="2021-11-18" class="pixel">18</td>
+              <td id="2021-11-19" class="pixel">19</td>
+              <td id="2021-11-20" class="pixel">20</td>
             </tr>
             <tr>
-              <td id="pixel-0-0" class="pixel">21</td>
-              <td id="pixel-0-1" class="pixel">22</td>
-              <td id="pixel-0-2" class="pixel">23</td>
-              <td id="pixel-0-3" class="pixel">24</td>
-              <td id="pixel-0-4" class="pixel">25</td>
-              <td id="pixel-0-5" class="pixel">26</td>
-              <td id="pixel-0-6" class="pixel">27</td>
+              <td id="2021-11-21" class="pixel">21</td>
+              <td id="2021-11-22" class="pixel">22</td>
+              <td id="2021-11-23" class="pixel">23</td>
+              <td id="2021-11-24" class="pixel">24</td>
+              <td id="2021-11-25" class="pixel">25</td>
+              <td id="2021-11-26" class="pixel">26</td>
+              <td id="2021-11-27" class="pixel">27</td>
             </tr>
             <tr>
-              <td id="pixel-0-0" class="pixel">28</td>
-              <td id="pixel-0-1" class="pixel">29</td>
-              <td id="pixel-0-2" class="pixel">30</td>
-              <td id="pixel-0-3" class="pixel">.</td>
-              <td id="pixel-0-4" class="pixel">.</td>
-              <td id="pixel-0-5" class="pixel">.</td>
-              <td id="pixel-0-6" class="pixel">.</td>
+              <td id="2021-11-28" class="pixel">28</td>
+              <td id="2021-11-29" class="pixel">29</td>
+              <td id="2021-11-30" class="pixel">30</td>
+              <td class="pixel">.</td>
+              <td class="pixel">.</td>
+              <td class="pixel">.</td>
+              <td class="pixel">.</td>
             </tr>
           </table>
         </div>
@@ -121,6 +121,7 @@
 
       <div class="midpane" id="midpane" style="display: block">
         <div class="d-flex flex-column">
+          <div id="selected_date"></div>
           <div
             class="memo"
             contenteditable="true"
@@ -144,7 +145,8 @@
         </div>
       </div>
       <div class="restpane" id="clickshow" style="display: none">
-        <input type="date" id="date" class="addB" value="date" />
+
+        <div id="selected_date_workout"></div>
 
         <div class="training">
           <p>운동 구분</p>
@@ -153,16 +155,15 @@
             type="checkbox"
             id="what_train1_1"
             name="what_train"
-            value="웨이트트레이닝"
-            
-          />웨이트 트레이닝</label>
+            value="웨이트트레이닝"/>웨이트 트레이닝</label>
           <label for="what_train"><input
+
             type="checkbox"
             id= "what_train1_2"
             name="what_train"
-            value="유산소"
-            
+            value="유산소"            
           />유산소</label>
+
         </div>
         <div class="training">
           <p>운동 상세 부위</p>
@@ -178,15 +179,12 @@
               type="checkbox"
               id= "what_train2_2"
               name="what_train"
-              value="가슴"
-            />가슴
-
+              value="가슴"/>가슴
             <input
               type="checkbox"
               id= "what_train2_3"
               name="what_train"
-              value="어깨"
-            />어깨
+              value="어깨"/>어깨
 
             <input
               type="checkbox"
@@ -194,6 +192,7 @@
               name="what_train"
               value="하체"
             />하체
+
             <div>
               <input
                 type="checkbox"
@@ -201,21 +200,18 @@
                 name="what_train"
                 value="이두"
               />이두
-
               <input
                 type="checkbox"
                 id= "what_train2_6"
                 name="what_train"
                 value="삼두"
               />삼두
-
               <input
                 type="checkbox"
                 id= "what_train2_7"
                 name="what_train"
                 value="힙"
               />힙
-
               <input
                 type="checkbox"
                 id= "what_train2_8"
@@ -229,6 +225,7 @@
                 name="what_train"
                 value="복근"
               />복근
+
             </div>
           </div>
         </div>
@@ -269,6 +266,7 @@
         />
       </div>
       <div class="restpane" id="restpane1" style="display: none">
+        <div id="selected_date_diet"></div>
         <p class="threepane">
           <span class="highlight">- 아침</span>
         </p>
@@ -278,15 +276,90 @@
         <p class="threepane">
           <span class="highlight">- 저녁</span>
         </p>
-        <p class="under">
-          <input
-            type="button"
-            class="addB"
-            value="여기에 추가하기"
-            onclick="ReturnNormal();dietinsert();"
-            id="add_diet"
-          />
-        </p>
+        <p id="breakfastMenu"></p>
+        <div class="under">
+          <div class="under-1">
+            <input
+              type="button"
+              class="addB"
+              value="뒤로가기"
+              onclick="ReturnNormal();"
+              id="return_back"
+            />
+          </div>
+          <div class="under-1">
+            <input
+              type="button"
+              class="addB"
+              value="여기에 추가하기"
+              onclick="showdietinsert();"
+              id="add_diet"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="restpane" id="restpane2" style="display: none">
+        <div id="addMenu" style="display: block">
+          <div class="smallbox">
+            <div>메뉴 추가</div>
+            <div id="add_diet_date"></div>
+          </div>
+          <div class="threepane">
+            <label for="diet"
+              ><input type="checkbox" name="diet" value="아침" /> 아침</label
+            >
+          </div>
+          <div class="threepane">
+            <label for="diet"
+              ><input type="checkbox" name="diet" value="점심" /> 점심</label
+            >
+          </div>
+          <div class="threepane">
+            <label for="diet"
+              ><input type="checkbox" name="diet" value="저녁" /> 저녁</label
+            >
+          </div>
+          <div>
+            <p>
+              <label for="diet"
+                >menu:
+                <input
+                  type="text"
+                  name="diet"
+                  placeholder="메뉴입력"
+                  required
+                  minlength="1"
+                  minlength="40"
+                  size="8"
+                  style="width: 200px"
+              /></label>
+            </p>
+          </div>
+          <div>
+            <p>
+              <label for="diet"
+                >weight:
+                <input
+                  type="number"
+                  name="diet"
+                  placeholder="무게입력"
+                  size="8"
+                  style="width: 100px"
+                />
+                g</label
+              >
+            </p>
+            <button
+              type="button"
+              class="addB"
+              style="float: right"
+              id="addMenuButton"
+              onclick="getDietInfo();returndiet();"
+            >
+              추가하기
+            </button>
+          </div>
+        </div>
       </div>
       <div class="rightpane" id="rightpane" style="display: block">
         <div>
@@ -336,20 +409,26 @@
     ></script>
     <script type="text/javascript" src="addWorkout.js"></script>
 
+    <script type="text/javascript" src="calendarLoad.js"></script>
+    <script type="text/javascript" src="add_diet.js"></script>
+
     <script>
       let train=[];
 
-      function LoadTasks(ymd){
-        let lastTasks= localStorage.getItem(ymd);
+      function LoadTasks(){
+        let lastTasks= localStorage.getItem("train");
+        if(!lastTasks) return;
+
+        train= JSON.parse(lastTasks);
 
       }
 
-      function SaveTasks(ymd){
-        localStorage.setItem(ymd, JSON.stringify(train));
+      function SaveTasks(){
+        localStorage.setItem("train", JSON.stringify(train));
       }
 
         document.querySelector("#addingWorkout").addEventListener("click", () => {
-          
+          LoadTasks();
           let train_d= {};
           let train_e= {
             "운동 구분": null, 
@@ -358,9 +437,7 @@
             "무게": null,
           };
 
-				  //1. 날짜 저장
-          let ymd= document.getElementById("date").value;
-          train_d[ymd]= [];
+				  //localStorage.clear();
 
 
           //2. 운동 구분
@@ -406,23 +483,27 @@
 
           //6. 추가하기
           let num=train.length;
-          
-          let add=0;
+          var add=0;
+
+          //1. 날짜 저장
+          let ymd= document.getElementById("selected_date_workout").innerText;
+          train_d[ymd]= [];          
+
           for(i=0; i< num; i++){
-            if(ymd in train[i]){
+            if(ymd in train[i]){//같은 날짜가 있을 경우
               train[i][ymd].push(train_e);
               add=1;
               break;
             }
           }
-          if(add===0){
+
+          if(add===0){//같은 날짜가 없는 경우
             train_d[ymd].push(train_e);
             train.push(train_d);
           }
 
-          
-          SaveTasks(ymd);
-          //console.log(train);
+          SaveTasks();
+          console.log(localStorage);
           //localStorage.clear();
 
           
