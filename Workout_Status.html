@@ -147,13 +147,20 @@
       <div class="restpane" id="clickshow" style="display: none">
 
         <div id="selected_date_workout"></div>
-//수정 필요 (날짜 받아오는거 데이터로 저장해야함)
-        <input type="date" id="date" class="addB" value="date" />
 
 
         <div class="training">
-          <p>운동 구분</p>
+          <p>운동 이름</p>
+          <label for="what_train">
+            <input type="text"
+            id="what_train_name"
+            name="what_train"
+            placeholder="운동이름입력"
+            size="15"/></label>
+        </div>
 
+        <div class="training">
+          <p>운동 구분</p>
           <label for="what_train"><input
             type="checkbox"
             id="what_train1_1"
@@ -236,9 +243,7 @@
           <p>운동횟수</p>
           <input
             type="number"
-
             id= "train_num"
-
             name="what_train"
             placeholder="횟수입력"
             size="8"
@@ -384,43 +389,8 @@
         </div>
       </div>
       <div class="rightpane" id="rightpane" style="display: block">
-        <div>
-          <label class="switch">
-            <span class="slider round">
-              <span>Bench Press</span>
-            </span>
-            <input type="checkbox" />
-            <div><span>5</span>Sets/<span>45</span>kg/<span>8</span>times</div>
-          </label>
-          <br />
-          <br />
-          <label class="switch">
-            <span class="slider round">
-              <span>Incline Bench Press</span>
-            </span>
-            <input type="checkbox" />
-            <div><span>5</span>Sets/<span>30</span>kg/<span>15</span>times</div>
-          </label>
-          <br />
-          <br />
-          <label class="switch">
-            <span class="slider round">
-              <span>Chest Press</span>
-            </span>
-            <input type="checkbox" />
-            <div><span>5</span>Sets/<span>35</span>kg/<span>10</span>times</div>
-          </label>
-          <br />
-          <br />
-          <label class="switch">
-            <span class="slider round">
-              <span>Dips</span>
-            </span>
-            <input type="checkbox" />
-            <div><span>5</span>Sets/<span>0</span>kg/<span>5</span>times</div>
-          </label>
-          <br />
-          <br />
+        <div id= "train_goal">
+
         </div>
       </div>
     </div>
@@ -437,36 +407,39 @@
     <script>
       let train=[];
 
-      function LoadTasks(ymd){
-        let lastTasks= localStorage.getItem(ymd);
+      function LoadTasks(){
+        let lastTasks= localStorage.getItem("train");
+        if(!lastTasks) return;
+
+        train= JSON.parse(lastTasks);
 
       }
 
-      function SaveTasks(ymd){
-        localStorage.setItem(ymd, JSON.stringify(train));
+      function SaveTasks(){
+        localStorage.setItem("train", JSON.stringify(train));
       }
 
         document.querySelector("#addingWorkout").addEventListener("click", () => {
-          
+          LoadTasks();
           let train_d= {};
           let train_e= {
+            "운동 이름": null,
             "운동 구분": null, 
             "상세 부위": null,
             "횟수": null,
             "무게": null,
           };
 
-				  //1. 날짜 저장
-          let ymd= document.getElementById("date").value;
-          train_d[ymd]= [];
-
+          //1. 운동 이름
+          let f0= document.getElementById("what_train_name");
+          train_e["운동 이름"]= f0.value;
 
           //2. 운동 구분
           let f1= document.getElementById("what_train1_1");
           let f2= document.getElementById("what_train1_2");
 
           if(f1.checked){
-            train_e["운동 구분"] =f1.value;
+            train_e["운동 구분"]= f1.value;
           } else {
             train_e["운동 구분"]= f2.value;
           }
@@ -504,25 +477,27 @@
 
           //6. 추가하기
           let num=train.length;
-          
-          let add=0;
+          var add=0;
+
+          //1. 날짜 저장
+          let ymd= document.getElementById("selected_date_workout").innerText;
+          train_d[ymd]= [];          
+
           for(i=0; i< num; i++){
-            if(ymd in train[i]){
+            if(ymd in train[i]){//같은 날짜가 있을 경우
               train[i][ymd].push(train_e);
               add=1;
               break;
             }
           }
-          if(add===0){
+
+          if(add===0){//같은 날짜가 없는 경우
             train_d[ymd].push(train_e);
             train.push(train_d);
           }
 
-          
-          SaveTasks(ymd);
-          //console.log(train);
+          SaveTasks();
           //localStorage.clear();
-
           
 			  })
         

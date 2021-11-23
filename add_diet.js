@@ -38,8 +38,6 @@ function diet() {
   if (rightpane.style.display === "block") {
     rightpane.style.display = "none";
   }
-  console.log(localStorage.getItem("menu"));
-  console.log(localStorage.getItem("weight"));
 }
 
 function showdietinsert() {
@@ -78,7 +76,7 @@ function getDietInfo() {
     breakfastText += element["메뉴"];
     breakfastText += '/';
     breakfastText += element["무게"];
-    breakfastText += '(g)'
+    breakfastText += '(kcal)'
     breakfastText += '\n';
   });
   document.getElementById("breakfastID").innerHTML = breakfastText;
@@ -87,7 +85,7 @@ function getDietInfo() {
     lunchText += element["메뉴"];
     lunchText += '/';
     lunchText += element["무게"];
-    lunchText += '(g)'
+    lunchText += '(kcal)'
     lunchText += '\n';
   });
   document.getElementById("lunchID").innerHTML = lunchText;
@@ -96,7 +94,7 @@ function getDietInfo() {
     dinnerText += element["메뉴"];
     dinnerText += '/';
     dinnerText += element["무게"];
-    dinnerText += '(g)'
+    dinnerText += '(kcal)'
     dinnerText += '\n';
   });
   document.getElementById("dinnerID").innerHTML = dinnerText;
