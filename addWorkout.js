@@ -45,6 +45,31 @@ function diet() {
     rightpane.style.display = "none";
   }
 }
-function dietinsert() {
-  window.open("diet.html", "add_diet", "width=500, height=600");
+function showdietinsert() {
+  var clickshow = document.getElementById("restpane2");
+  var clickdelete = document.getElementById("restpane1");
+  if (clickshow.style.display === "none") {
+    clickshow.style.display = "block";
+  }
+  if (clickdelete.style.display === "block") {
+    clickdelete.style.display = "none";
+  }
+}
+function returndiet() {
+  var clickshow = document.getElementById("restpane1");
+  var clickdelete = document.getElementById("restpane2");
+  if (clickshow.style.display === "none") {
+    clickshow.style.display = "block";
+  }
+  if (clickdelete.style.display === "block") {
+    clickdelete.style.display = "none";
+  }
+}
+function getDietInfo() {
+  console.log(localStorage.getItem("menu_breakfast"));
+  console.log(localStorage.getItem("weight_breakfast"));
+  console.log(localStorage.getItem("menu_lunch"));
+  console.log(localStorage.getItem("weight_lunch"));
+  console.log(localStorage.getItem("menu_dinner"));
+  console.log(localStorage.getItem("weight_dinner"));
 }
