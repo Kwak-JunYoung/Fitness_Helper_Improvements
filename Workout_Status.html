@@ -27,7 +27,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="Title" style="margin: auto"
+        <a class="navbar-brand" href="MainEnter.html" id="Title" style="margin: auto"
           >Fitness Helper</a
         >
       </div>
@@ -131,8 +131,8 @@
           <input
             type="button"
             class="addB"
-            value="식단 추가"
-            onclick="diet();"
+            value="식단 확인"
+            onclick="diet();getDietInfo()"
             id="addDietButton"
           />
           <input
@@ -373,7 +373,7 @@
                   style="width: 100px"
                   id="weight"
                 />
-                g</label
+                kcal</label
               >
             </p>
             <button
