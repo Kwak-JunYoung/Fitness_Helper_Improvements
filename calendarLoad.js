@@ -7,7 +7,9 @@ window.addEventListener("load", () => {
         document.getElementById("selected_date_workout").innerHTML = select_date;
         document.getElementById("selected_date_diet").innerHTML = select_date;
         document.getElementById("add_diet_date").innerHTML = select_date;
-
+                
+        // document.getElementById("breakfastID").innerHTML = breakfastText
+        getDietInfo(select_date)
         //<train 표시>
 
         //0. 표시 없게
@@ -69,7 +71,7 @@ window.addEventListener("load", () => {
             str+= day_train[i]["상세 부위"][j];
             if(j!== (arrs-1))str+= ", ";
           }
-          str= day_train[i]["운동 구분"]+ "/ " + str + "/ " + day_train[i]["횟수"] + "times/ " + day_train[i]["무게"]+ "g";
+          str= day_train[i]["운동 구분"]+ "/ " + str + "/ " + day_train[i]["횟수"] + "times/ " + day_train[i]["무게"]+ "kg";
           div.textContent= str;
           label.appendChild(div);
 

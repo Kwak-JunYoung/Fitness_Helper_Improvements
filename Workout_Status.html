@@ -27,7 +27,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="Title" style="margin: auto"
+        <a class="navbar-brand" href="MainEnter.html" id="Title" style="margin: auto"
           >Fitness Helper</a
         >
       </div>
@@ -131,8 +131,8 @@
           <input
             type="button"
             class="addB"
-            value="식단 추가"
-            onclick="diet();"
+            value="식단 확인"
+            onclick="diet();getDietInfo()"
             id="addDietButton"
           />
           <input
@@ -284,6 +284,23 @@
         <p class="threepane">
           <span class="highlight">- 저녁</span>
         </p>
+
+        <br>
+
+        <p class="threepane">
+          <span id="breakfastID"></span>
+        </p>
+        <p class="threepane">
+          <span id="lunchID"></span>
+        </p>
+        <p class="threepane">
+          <span id="dinnerID"></span>
+        </p>
+        
+        <br>
+        <br>
+        
+
         <p id="breakfastMenu"></p>
         <div class="under">
           <div class="under-1">
@@ -314,17 +331,17 @@
           </div>
           <div class="threepane">
             <label for="diet"
-              ><input type="checkbox" name="diet" value="아침" /> 아침</label
+              ><input type="radio" name="meal" value="아침" /> 아침</label
             >
           </div>
           <div class="threepane">
             <label for="diet"
-              ><input type="checkbox" name="diet" value="점심" /> 점심</label
+              ><input type="radio" name="meal" value="점심" /> 점심</label
             >
           </div>
           <div class="threepane">
             <label for="diet"
-              ><input type="checkbox" name="diet" value="저녁" /> 저녁</label
+              ><input type="radio" name="meal" value="저녁" /> 저녁</label
             >
           </div>
           <div>
@@ -340,6 +357,7 @@
                   minlength="40"
                   size="8"
                   style="width: 200px"
+                  id="menu"
               /></label>
             </p>
           </div>
@@ -353,8 +371,9 @@
                   placeholder="무게입력"
                   size="8"
                   style="width: 100px"
+                  id="weight"
                 />
-                g</label
+                kcal</label
               >
             </p>
             <button
@@ -362,7 +381,7 @@
               class="addB"
               style="float: right"
               id="addMenuButton"
-              onclick="getDietInfo();returndiet();"
+              onclick="storeDiet();getDietInfo();returndiet();"
             >
               추가하기
             </button>

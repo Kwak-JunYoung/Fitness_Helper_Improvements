@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+
+	<title>SKKU-DOT</title>
+	<style>
+		.container {
+			width: 640px;
+		}
+
+		.row {
+			display: flex;
+			justify-content: center;
+		}
+
+		.pixel {
+			background: #e3e3e3;
+			opacity: .7;
+			width: 40px;
+			height: 40px;
+			border-radius: 3px;
+			margin: 2px;
+		}
+
+		.pixel:hover {
+			opacity: .9;
+		}
+
+		.pixel.gray {
+			background: #888;
+		}
+
+		.pixel.black {
+			background: #111;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-light bg-light">
+		<div class="container">
+			<span class="navbar-brand mb-0 h1"><i class="bi bi-palette"></i> SKKU-DOT</span>
+		</div>
+	</nav>
+	<div class="container pt-2">
+		<div class="d-flex justify-content-end">
+			<button id="reset" class="btn btn-sm btn-danger">Reset</button>
+		</div>
+		<div class="d-flex flex-column">
+			<div class="row">
+				<div id="pixel-0-0" class="pixel"></div>
+				<div id="pixel-0-1" class="pixel"></div>
+				<div id="pixel-0-2" class="pixel"></div>
+				<div id="pixel-0-3" class="pixel"></div>
+				<div id="pixel-0-4" class="pixel"></div>
+				<div id="pixel-0-5" class="pixel"></div>
+				<div id="pixel-0-6" class="pixel"></div>
+				<div id="pixel-0-7" class="pixel"></div>
+				<div id="pixel-0-8" class="pixel"></div>
+				<div id="pixel-0-9" class="pixel"></div>
+			</div>
+			<div class="row">
+				<div id="pixel-1-0" class="pixel"></div>
+				<div id="pixel-1-1" class="pixel"></div>
+				<div id="pixel-1-2" class="pixel"></div>
+				<div id="pixel-1-3" class="pixel"></div>
+				<div id="pixel-1-4" class="pixel"></div>
+				<div id="pixel-1-5" class="pixel"></div>
+				<div id="pixel-1-6" class="pixel"></div>
+				<div id="pixel-1-7" class="pixel"></div>
+				<div id="pixel-1-8" class="pixel"></div>
+				<div id="pixel-1-9" class="pixel"></div>
+			</div>
+			<div class="row">
+				<div id="pixel-2-0" class="pixel"></div>
+				<div id="pixel-2-1" class="pixel"></div>
+				<div id="pixel-2-2" class="pixel"></div>
+				<div id="pixel-2-3" class="pixel"></div>
+				<div id="pixel-2-4" class="pixel"></div>
+				<div id="pixel-2-5" class="pixel"></div>
+				<div id="pixel-2-6" class="pixel"></div>
+				<div id="pixel-2-7" class="pixel"></div>
+				<div id="pixel-2-8" class="pixel"></div>
+				<div id="pixel-2-9" class="pixel"></div>
+			</div>
+			<div class="row">
+				<div id="pixel-3-0" class="pixel"></div>
+				<div id="pixel-3-1" class="pixel"></div>
+				<div id="pixel-3-2" class="pixel"></div>
+				<div id="pixel-3-3" class="pixel"></div>
+				<div id="pixel-3-4" class="pixel"></div>
+				<div id="pixel-3-5" class="pixel"></div>
+				<div id="pixel-3-6" class="pixel"></div>
+				<div id="pixel-3-7" class="pixel"></div>
+				<div id="pixel-3-8" class="pixel"></div>
+				<div id="pixel-3-9" class="pixel"></div>
+			</div>
+			<div class="row">
+				<div id="pixel-4-0" class="pixel"></div>
+				<div id="pixel-4-1" class="pixel"></div>
+				<div id="pixel-4-2" class="pixel"></div>
+				<div id="pixel-4-3" class="pixel"></div>
+				<div id="pixel-4-4" class="pixel"></div>
+				<div id="pixel-4-5" class="pixel"></div>
+				<div id="pixel-4-6" class="pixel"></div>
+				<div id="pixel-4-7" class="pixel"></div>
+				<div id="pixel-4-8" class="pixel"></div>
+				<div id="pixel-4-9" class="pixel"></div>
+			</div>
+			<div class="row">
+				<div id="pixel-5-0" class="pixel"></div>
+				<div id="pixel-5-1" class="pixel"></div>
+				<div id="pixel-5-2" class="pixel"></div>
+				<div id="pixel-5-3" class="pixel"></div>
+				<div id="pixel-5-4" class="pixel"></div>
+				<div id="pixel-5-5" class="pixel"></div>
+				<div id="pixel-5-6" class="pixel"></div>
+				<div id="pixel-5-7" class="pixel"></div>
+				<div id="pixel-5-8" class="pixel"></div>
+				<div id="pixel-5-9" class="pixel"></div>
+			</div>
+			<div class="row">
+				<div id="pixel-6-0" class="pixel"></div>
+				<div id="pixel-6-1" class="pixel"></div>
+				<div id="pixel-6-2" class="pixel"></div>
+				<div id="pixel-6-3" class="pixel"></div>
+				<div id="pixel-6-4" class="pixel"></div>
+				<div id="pixel-6-5" class="pixel"></div>
+				<div id="pixel-6-6" class="pixel"></div>
+				<div id="pixel-6-7" class="pixel"></div>
+				<div id="pixel-6-8" class="pixel"></div>
+				<div id="pixel-6-9" class="pixel"></div>
+			</div>
+			<div class="row">
+				<div id="pixel-7-0" class="pixel"></div>
+				<div id="pixel-7-1" class="pixel"></div>
+				<div id="pixel-7-2" class="pixel"></div>
+				<div id="pixel-7-3" class="pixel"></div>
+				<div id="pixel-7-4" class="pixel"></div>
+				<div id="pixel-7-5" class="pixel"></div>
+				<div id="pixel-7-6" class="pixel"></div>
+				<div id="pixel-7-7" class="pixel"></div>
+				<div id="pixel-7-8" class="pixel"></div>
+				<div id="pixel-7-9" class="pixel"></div>
+			</div>
+			<div class="row">
+				<div id="pixel-8-0" class="pixel"></div>
+				<div id="pixel-8-1" class="pixel"></div>
+				<div id="pixel-8-2" class="pixel"></div>
+				<div id="pixel-8-3" class="pixel"></div>
+				<div id="pixel-8-4" class="pixel"></div>
+				<div id="pixel-8-5" class="pixel"></div>
+				<div id="pixel-8-6" class="pixel"></div>
+				<div id="pixel-8-7" class="pixel"></div>
+				<div id="pixel-8-8" class="pixel"></div>
+				<div id="pixel-8-9" class="pixel"></div>
+			</div>
+			<div class="row">
+				<div id="pixel-9-0" class="pixel"></div>
+				<div id="pixel-9-1" class="pixel"></div>
+				<div id="pixel-9-2" class="pixel"></div>
+				<div id="pixel-9-3" class="pixel"></div>
+				<div id="pixel-9-4" class="pixel"></div>
+				<div id="pixel-9-5" class="pixel"></div>
+				<div id="pixel-9-6" class="pixel"></div>
+				<div id="pixel-9-7" class="pixel"></div>
+				<div id="pixel-9-8" class="pixel"></div>
+				<div id="pixel-9-9" class="pixel"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+	<script>
+		const Color = {
+			White: 0,
+			Gray: 1,
+			Black: 2
+		};
+
+		function loadPixels() {
+			/*
+			Fill here
+			*/
+			var cells = document.querySelectorAll('.pixel');
+			cells.forEach(cell=> {
+				var retrievedCell = localStorage.getItem(cell.id)
+				if(retrievedCell !== null){
+					cell.classList = retrievedCell.valueOf();
+				} else{
+					cell.classList = 'pixel';
+				}
+			});
+		}
+
+		function savePixels() {
+			var cells = document.querySelectorAll('.pixel');
+			cells.forEach(cell => {
+				localStorage.setItem(cell.id, cell.className);
+			});
+		}
+
+		window.addEventListener("load", () => {
+			loadPixels();
+
+			// pixel click
+			document.querySelectorAll(".pixel").forEach(pixel => {
+				pixel.addEventListener("click", function() {
+					if (pixel.classList.contains('black')) {
+						pixel.classList.remove('black');
+					}else if (pixel.classList.contains('gray')) {
+						pixel.classList.remove('gray');
+						pixel.classList.add('black');
+					} else {
+						pixel.classList.add('gray');
+					}
+					savePixels();
+				});
+				
+			})
+
+			// pixel reset
+			document.querySelector("#reset").addEventListener("click", () => {
+				var cells = document.querySelectorAll(".pixel");
+				cells.forEach(cell => {
+					cell.className = 'pixel';
+				})
+				savePixels();
+			})
+		});
+	</script>
+</body>
+
+</html>
