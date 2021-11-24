@@ -4,23 +4,16 @@
 
 - Provides user the information of the number of people at the gym, and keeps track of the user's workout routine.
 
-## Links to resources
+## Screenshots
 
-## Installation
+- To be uploaded
 
--
-
-## API reference
-
--
-
-## Examples
-
-- Needs insertion later
+## Demonstration Video
+- Coming soon
 
 ## Releases
 
-- We will release it someday...
+- v1.0.0 https://kwak-junyoung.github.io/Fitness_Helper/
 
 ## How to contribute
 
@@ -45,30 +38,32 @@
 2. Implement calendar
 
 ```js
-var each_Set = {
-    workout_Name = "";          // Name of workout e.g. pushup, situp, ...
-    workout_Num = 0;            // How many times did a user conduct a workout in a set
-    failure = false;            // Whether the user successfully conducted this set
-};
+str= day_train[i]["운동 구분"]+ "/ " + str + "/ " + day_train[i]["횟수"] + "times/ " + day_train[i]["무게"]+ "kg";
+          div.textContent= str;
+          label.appendChild(div);
 
-var each_Workout = {
-    // each_Set structure
-    set_Num = 0;                // How many sets are to be conducted for that workout
-    prog_overload = false;      // If the user failed a set even a single time, stop progressive overload
-    workout_part = "";          // Which part of the body does this workout deal with e.g. chest, biceps ...
+
+if (localStorage.getItem(targetID) === null) {
+  var dietGraph = ('{"아침":' + '[]' + ',"점심":' + '[]' + ',"저녁":' + '[]' + '}')
+  localStorage.setItem(targetID, dietGraph)
 }
 
-var each_Day = {
-    // each_Workout structure
-    // date of that day
-}
+var old = JSON.parse(localStorage.getItem(targetID))
+var text = JSON.parse(('{"메뉴":"' + input + '","무게":' + input2 + '}'));
+
+old[selectedTime].push(text);
+var strold = JSON.stringify(old)
+localStorage.setItem(targetID, strold)
 ```
 
-3. to be updated
+3. Implement workout routine & diet management functions
+
+4. Connect those to the calendar 
 
 ## 3. Future
 
-- ??
+- Memo Storage implementation
+- Progressive overload implementation
 
 ## 5. Work
 
@@ -78,12 +73,12 @@ var each_Day = {
 
 - 곽준영:
 
-> 식단 추가 페이지 프론트엔드(6pg), 점진직 과부하(right pane) 수정, 식단 페이지 백엔드(localstorage)
+> 식단 추가 페이지 프론트엔드(6pg), 점진직 과부하(right pane) 수정, 식단 페이지 백엔드(localstorage), 발표
 
 - 진영서:
 
-> 입장/퇴장 페이지 프론트엔드, 운동 페이지 프론트엔드(4pg), 웹서버 구축, 날짜 불러오기, 데이터베이스 연동, 입장/퇴장 로컬스토리지
+> 입장/퇴장 페이지 프론트엔드, 운동 페이지 프론트엔드(4pg), 웹서버 & SQL 데이터베이스 구축, 날짜 불러오기, 입장/퇴장 로컬스토리지, 쎔네일 디자인
 
 - 이유기:
 
-> 식단 페이지 프론트엔드(5pg), 운동 추가 세부 사항 수정, 플레이리스트 페이지(7pg), 운동 페이지 백엔드(localstorage)
+> 식단 페이지 프론트엔드(5pg), 운동 추가 세부 사항 수정, 플레이리스트 페이지(7pg), 운동 페이지 백엔드(localstorage), 시연 비디오 제작
