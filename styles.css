@@ -203,7 +203,7 @@ ul {
   border-radius: 10px;
   border: 2px dashed rgb(201, 201, 201);
 }
-.box1 p {
+#usernumber {
   color: red;
   text-size-adjust: 10px;
   line-height: 150px;
@@ -237,8 +237,13 @@ ul {
   padding-left: 20px;
 }
 
+
+
 .under-1 {
-  float: left;
+  align-items: center;
+  float: both;
   width: 40%;
   margin: 10px;
+  position: relative;
+  left: 25%;
 }
