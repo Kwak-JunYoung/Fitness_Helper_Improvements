@@ -22,6 +22,8 @@ Diet management page
 Addition of diet
 - ![This is an image](https://user-images.githubusercontent.com/80460155/143388931-cbcd1d60-d4fa-4811-8540-af1a4fb448ad.png)
 After addition of diet
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143394286-cdefd073-32b7-44ed-bf08-535900efa233.png)
+List of music to listen to when working out
 
 
 ## Demonstration Video
