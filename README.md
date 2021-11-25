@@ -25,7 +25,7 @@
 
 
 ## Demonstration Video
-- https://user-images.githubusercontent.com/80460155/143390424-fb34853d-7470-4a88-a0e1-f8711ea8c957.gif
+- https://youtu.be/9HF10PQRROk
 
 ## Releases
 
