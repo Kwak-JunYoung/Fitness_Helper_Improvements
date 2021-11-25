@@ -2,7 +2,19 @@ window.addEventListener("load", () => {
     document.querySelectorAll(".pixel").forEach((pixel) => {
       /*달력에서 클릭된 날짜의 id(ex. 2021-11-11)을 가져와서 나머지 파트의 현재 날짜로 설정*/
       pixel.addEventListener("click", () => {
+        // 이전 꺼 저장
+        console.log(localStorage.getItem("beforeDate"));  // 이전 날짜 불러오기
+        let dateBefore;
+        if (JSON.stringify((dateBefore = localStorage.getItem("beforeDate"))) !== 'null') {  // 달력을 누르는 것이 처음이 아니라면
+          let dateBeforeID = dateBefore + "_memoID"
+          localStorage.setItem(dateBeforeID, document.getElementById("memonote").innerHTML);
+        }
         let select_date = pixel.id;
+        localStorage.setItem("beforeDate", select_date);
+        let currentMemoID = select_date + "_memoID";
+        document.getElementById("memonote").innerHTML = localStorage.getItem(currentMemoID);
+        // 현재 꺼 불러오기
+
         document.getElementById("selected_date").innerHTML = select_date;
         document.getElementById("selected_date_workout").innerHTML = select_date;
         document.getElementById("selected_date_diet").innerHTML = select_date;
