@@ -16,11 +16,11 @@ The main routine management page
 Workout Addition
 - ![This is an image](https://user-images.githubusercontent.com/80460155/143388939-304c725e-48a3-46b6-bdf4-ce8bd89a07ca.png)
 After addition of workout
-- ![This is an image](https://user-images.githubusercontent.com/80460155/143388924-1de3af50-bc2b-48c2-8c17-099ea423186c.png)
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143476832-75550203-c50d-46dc-a32e-d143817e835e.png)
 Diet management page
 - ![This is an image](https://user-images.githubusercontent.com/80460155/143399791-8d7950fa-a124-46a2-a6c2-4c6b99867c0a.png)
 Addition of diet
-- ![This is an image](https://user-images.githubusercontent.com/80460155/143388931-cbcd1d60-d4fa-4811-8540-af1a4fb448ad.png)
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143476836-23034cb8-0719-493c-8df5-159f5f8b0172.png)
 After addition of diet
 - ![This is an image](https://user-images.githubusercontent.com/80460155/143394286-cdefd073-32b7-44ed-bf08-535900efa233.png)
 List of music to listen to when working out
