@@ -80,6 +80,7 @@ localStorage.setItem(targetID, strold)
 
 - Memo Storage implementation
 - Progressive overload implementation
+- git log --pretty=oneline --graph
 
 ## 5. Work
 
