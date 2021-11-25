@@ -25,18 +25,32 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="Title" style="margin: auto"
+        <a
+          class="navbar-brand"
+          href="index.html"
+          id="Title"
+          style="margin: auto"
           >Fitness Helper</a
         >
       </div>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="threeButtons">
-        <a href="MainEnter.html"
-          ><button type="button" class="btn btn-info">Main</button></a
+        <a href="index.html"
+          ><button type="button" class="btn btn-info" onclick="checkEntering()">
+            Main
+          </button></a
         >
-        <a href="Workout_Status.html"
-          ><button type="button" class="btn btn-info">
+        <a
+          href="Workout_Status.html"
+          style="visibility: hidden"
+          onclick="checkEntering()"
+          ><button
+            type="button"
+            class="btn btn-info"
+            id="personalroutineB"
+            style="visibility: hidden"
+          >
             Personal Routine
           </button></a
         >
@@ -50,7 +64,7 @@
     <div class="container" id="centercontent">
       <div class="box1">
         현재 인원수 :
-        <p>00명</p>
+        <div id="usernumber">0명</div>
       </div>
       <div class="box2" id="beforeEnter" style="display: block">
         <div class="box2-1">입장전</div>
@@ -84,15 +98,6 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="addWorkout.js"></script>
-    <script>
-      function ChangeMaintoExit() {
-        document.getElementById("beforeEnter").style.display = "none";
-        document.getElementById("afterEnter").style.display = "block";
-      }
-      function ChangeMaintoEnter() {
-        document.getElementById("beforeEnter").style.display = "block";
-        document.getElementById("afterEnter").style.display = "none";
-      }
-    </script>
+    <script type="text/javascript" src="EnterExit.js"></script>
   </body>
 </html>
