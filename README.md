@@ -6,10 +6,27 @@
 
 ## Screenshots
 
-- To be uploaded
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143388915-37e63092-99bd-4586-b12c-eccc51c9dc84.png)
+Before entering the gym
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143389743-db91586c-278b-45e9-89ac-6e7686abb787.png)
+After entering the gym
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143388938-68ca382e-a025-458e-afe9-06b8725d3c30.png)
+The main routine management page
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143389128-64eb248c-4a6c-4f90-9ac0-ed5e9b526df1.png)
+Workout Addition
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143388939-304c725e-48a3-46b6-bdf4-ce8bd89a07ca.png)
+After addition of workout
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143388924-1de3af50-bc2b-48c2-8c17-099ea423186c.png)
+Diet management page
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143399791-8d7950fa-a124-46a2-a6c2-4c6b99867c0a.png)
+Addition of diet
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143388931-cbcd1d60-d4fa-4811-8540-af1a4fb448ad.png)
+After addition of diet
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143394286-cdefd073-32b7-44ed-bf08-535900efa233.png)
+List of music to listen to when working out
 
 ## Demonstration Video
-- Coming soon
+- https://youtu.be/9HF10PQRROk
 
 ## Releases
 
@@ -73,11 +90,11 @@ localStorage.setItem(targetID, strold)
 
 - 곽준영:
 
-> 식단 추가 페이지 프론트엔드(6pg), 점진직 과부하(right pane) 수정, 식단 페이지 백엔드(localstorage), 발표
+> 식단 추가 페이지 프론트엔드(6pg), 점진직 과부하(right pane) 수정, 식단 페이지 백엔드(localstorage), 메모 저장 기능(local storage), 발표
 
 - 진영서:
 
-> 입장/퇴장 페이지 프론트엔드, 운동 페이지 프론트엔드(4pg), 웹서버 & SQL 데이터베이스 구축, 날짜 불러오기, 입장/퇴장 로컬스토리지, 쎔네일 디자인
+> 입장/퇴장 페이지 프론트엔드, 운동 페이지 프론트엔드(4pg), 웹서버 & SQL 데이터베이스 구축, 날짜 불러오기, 입장/퇴장 로컬스토리지, 쎔네일 디자인, PPT 제작
 
 - 이유기:
 
