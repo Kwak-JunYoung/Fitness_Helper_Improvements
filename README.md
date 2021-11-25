@@ -6,7 +6,8 @@
 
 ## Screenshots
 
-- To be uploaded
+- ![This is an image](C:\Users\klop0\공부자료\2021-2\Open Source Software Practice\FitnessHelper_Images\BeforeEnter)
+
 
 ## Demonstration Video
 - Coming soon
