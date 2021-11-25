@@ -25,7 +25,6 @@ After addition of diet
 - ![This is an image](https://user-images.githubusercontent.com/80460155/143394286-cdefd073-32b7-44ed-bf08-535900efa233.png)
 List of music to listen to when working out
 
-
 ## Demonstration Video
 - https://youtu.be/9HF10PQRROk
 

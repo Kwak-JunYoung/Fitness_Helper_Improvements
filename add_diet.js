@@ -88,7 +88,7 @@ function getDietInfo(randomparameter) {
       breakfastText += '/';
       breakfastText += element["무게"];
       breakfastText += '(kcal)'
-      breakfastText += '\n';
+      breakfastText += '\n ';
     });
   
     lunchList.forEach(element =>{ 
@@ -96,7 +96,7 @@ function getDietInfo(randomparameter) {
       lunchText += '/';
       lunchText += element["무게"];
       lunchText += '(kcal)'
-      lunchText += '\n';
+      lunchText += '\n ';
     });
   
     dinnerList.forEach(element =>{ 
@@ -104,7 +104,7 @@ function getDietInfo(randomparameter) {
       dinnerText += '/';
       dinnerText += element["무게"];
       dinnerText += '(kcal)'
-      dinnerText += '\n';
+      dinnerText += '\n ';
     });
 
   }
