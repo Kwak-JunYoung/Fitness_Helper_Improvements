@@ -6,7 +6,7 @@
 
 ## Screenshots
 
-- ![This is an image](C:\Users\klop0\공부자료\2021-2\Open Source Software Practice\FitnessHelper_Images\BeforeEnter)
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143388915-37e63092-99bd-4586-b12c-eccc51c9dc84.png)
 
 
 ## Demonstration Video
