@@ -12,7 +12,7 @@ Before entering the gym
 After entering the gym
 - ![This is an image](https://user-images.githubusercontent.com/80460155/143388938-68ca382e-a025-458e-afe9-06b8725d3c30.png)
 The main routine management page
-- ![This is an image](https://user-images.githubusercontent.com/80460155/143389128-64eb248c-4a6c-4f90-9ac0-ed5e9b526df1.png)
+- ![This is an image](https://user-images.githubusercontent.com/80460155/143399791-8d7950fa-a124-46a2-a6c2-4c6b99867c0a.png)
 Workout Addition
 - ![This is an image](https://user-images.githubusercontent.com/80460155/143388939-304c725e-48a3-46b6-bdf4-ce8bd89a07ca.png)
 After addition of workout
