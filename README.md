@@ -81,6 +81,7 @@ localStorage.setItem(targetID, strold)
 
 - Memo Storage implementation
 - Progressive overload implementation
+- Calendar Improvement
 
 ## 5. Work
 
