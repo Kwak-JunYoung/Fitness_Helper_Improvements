@@ -36,6 +36,7 @@
         >
       </div>
     </nav>
+    <!-- navbarTemplate start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="threeButtons">
         <a href="index.html"
@@ -51,20 +52,26 @@
         >
       </div>
     </nav>
+    <!-- navbarTemplate end -->
+
   </head>
   <body>
     <div class="container">
+      <!-- calendarTemplate start-->
       <div class="calendarPane">
         <!-- Calendar Storage-->
 
         <div class="month">
+          <!--dateYearTemplate start-->
           <ul>
             <li class="next">&#10095;</li>
             <li class="prev">&#10094;</li>
             <li>November<br /><span style="font-size: 18px">2021</span></li>
           </ul>
+          <!--dateYearTemplate end-->
 
           <table style="margin: auto">
+            <!--weekdaysTemplate start-->
             <tr>
               <td id="sunday" class="weekNames">SUN</td>
               <td id="monday" class="weekNames">MON</td>
@@ -74,6 +81,8 @@
               <td id="friday" class="weekNames">FRI</td>
               <td id="saturday" class="weekNames">SAT</td>
             </tr>
+            <!--weekdaysTemplate end-->
+            <!--retCalendar start-->
             <tr>
               <td class="pixel">.</td>
               <td id="2021-11-01" class="pixel">1</td>
@@ -119,9 +128,11 @@
               <td class="pixel">.</td>
               <td class="pixel">.</td>
             </tr>
+            <!--retCalendar end-->
           </table>
         </div>
       </div>
+      <!-- calendarTemplate end-->
 
       <div class="midpane" id="midpane" style="display: block">
         <div class="d-flex flex-column">
